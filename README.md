@@ -1,3 +1,3 @@
 # jea.tt
 
-This is the source code for http://jea.tt. Site is built in Jekyll and Compass and hosted on Github (obviously). Clearly no site here yet either.
+This is the source code for http://jea.tt. Site is built in Jekyll and Compass and hosted on Github (obviously). Clearly no site here yet either. Development is being done out in the open because in this case there's no reason for me to manage a separate dev site, and I'll be pleased to chart the project's history through commits. As soon as the site is launched this file will be updated, so if you're reading this the site isn't done yet and there are probably cats everywhere. 
