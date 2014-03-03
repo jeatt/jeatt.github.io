@@ -2,7 +2,7 @@
 layout: project
 title: Podengo
 categories: [work]
-lede: "Podengo are a market research company who I was privileged enough to see go from a startup to a successful business. Their website is pink, but not as pink as it was."
+lede: "Podengo are a market research company who I was privileged enough to see grow from a startup to a successful business. "
 hero: podengo-hero.jpg
 responsibilities:
 - Planning and research

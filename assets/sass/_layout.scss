@@ -56,9 +56,9 @@ article{
 		}
 	}
 	.content{
+		@include trailer(1.5);
 		@media screen and (min-width : $break-large){
 			@include gs-span(e,2,5);
-			@include trailer();
 		}
 		@media screen and (min-width : $break-larger){
 			@include gs-span(e,2,4,(1,4));
