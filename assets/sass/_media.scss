@@ -1,0 +1,16 @@
+/* Images */ 
+
+img,
+object,
+embed,
+iframe{
+	clear: both;
+	max-width: 100%;
+	&.hero{
+		@include trailer();
+	}
+	.content &{
+		@include margin-leader(1);
+		@include margin-trailer(1);
+	}
+}

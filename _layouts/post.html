@@ -1,9 +1,55 @@
 ---
 layout: default
+permalink: pretty
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-{{ content }}
-</div>
+<article role="main">
+	<header>
+		<h1>
+			{{ page.title }}
+		</h1>
+		<p class="meta">
+			Published on <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %d, %Y" }}</time>
+		</p>
+	</header>
+	{% if page.standfirst %}
+	<p class="standfirst">
+		{{ page.standfirst }}
+	</p>
+	{% endif %}
+	{% if page.lede %}
+	<p class="lede">
+		{{ page.lede }}
+	</p>
+	{% endif %}
+	{% if page.hero %}
+	<img class="hero" src="http://cdn.jea.tt/img/post/{{ page.hero }}" alt="">
+	{% endif %}
+	<div class="content">
+		{{ page.content | markdownify }}
+	</div> <!-- /.content -->
+	<footer>
+		<p class="share">
+			<i class="fa fa-twitter"></i> <a href="http://twitter.com/">Leave a comment on Twitter</a>
+		</p>
+		{% if page.endnotes %}
+		<h2>Endnotes</h2>
+		<ol class="endnotes">
+			{% for item in page.endnotes %}
+			<li>{{ item }}</li>
+			{% endfor %}
+		</ol>
+		{% endif %}
+	</footer>
+</article>
+<nav class="secondary">
+	<section>
+		<h2>Recent posts</h2>
+		<ul>
+			{% for post in site.categories['blog'] %}
+			<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</section>
+</nav>
+

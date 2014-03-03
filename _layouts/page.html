@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<article role="main">
+	<header>
+		<h1>
+			{{ page.title }}
+		</h1>
+	</header>
+	{% if page.standfirst %}
+	<p class="standfirst">
+		{{ page.standfirst }}
+	</p>
+	{% endif %}
+	{% if page.lede %}
+	<p class="lede">
+		{{ page.lede }}
+	</p>
+	{% endif %}
+	{% if page.hero %}
+	<img class="hero" src="{{ page.hero }}" alt="">
+	{% endif %}
+	<div class="content">
+		{{ page.content | markdownify }}
+	</div> <!-- /.content -->
+	<footer>
+		{% if page.responsibilities %}
+		<h2>What I did</h2>
+		<ul>
+			{% for item in page.responsibilities %}
+			<li>{{ item }}</li>
+			{% endfor %}
+		</ul>
+		{% endif %}
+	</footer>
+</article>

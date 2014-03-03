@@ -1,4 +1,5 @@
-name: Your New Jekyll Site
+name: "Thomas Jeatt Webcraft"
 markdown: redcarpet
+permalink: /:categories/:title/
 pygments: true
-exclude: [README.md, config.rb, compass_app_log.txt, CNAME]
+exclude: [CNAME, compass_app_log.txt, config.rb, jea.tt.sublime-project, README.md, sass]

@@ -1,0 +1,159 @@
+/* Default styles - links contained within text are the default font colour to make reading easier */
+/* a{
+	&:link{
+		border-bottom: 1px solid $theme_accent;
+		color: $theme_accent;
+		padding-bottom: .1em;
+		text-decoration: none;
+	}
+	&:visited{
+
+	}
+	&:hover{
+		color: $primary_theme_colour;
+		border-bottom: 1px solid $theme_accent;
+	}
+	&:active{
+	}
+	.logotype &{
+		color: $primary_font_colour;
+		border-bottom: none;
+	}
+	[role=navigation] &{
+		color: $primary_font_colour;
+		border: none;
+		padding-bottom: none;
+		&:hover{
+			color: $primary_theme_colour;
+		}
+	}
+	.post &{
+		border-bottom: 1px solid $primary_font_colour;
+		color: $primary_font_colour;
+		&:hover{
+			background: red;
+		}
+	}
+	.secondary ul &,
+	.contact ul &{
+		border: none;
+	}
+} */
+
+
+/* for reasons of maintenance and prevention of banging head against wall, I'm going to be very specific about link styles */
+
+/* the only two constants: no text decoration, and a little easing */
+
+a{
+	@include transition (all .2s ease);
+	text-decoration: none;
+}
+
+/* and from this point on it's all about context ... */
+
+
+/* global header */
+a.logotype{
+	&:link,
+	&:visited{
+		color: $primary_font_colour;
+		span{
+			color: $primary_theme_colour;
+		}
+	}
+	&:hover,
+	&:active{
+		color: $primary_theme_colour;
+	}
+}
+
+/* main navigation */
+nav[role=navigation] a{
+	z-index: 999;
+	&:link,
+	&:visited{
+		color: $primary_font_colour;
+		opacity: .75;
+		&.current{
+			opacity: 1;
+			padding-top: .25em;
+		}
+	}
+	&:hover,
+	&:active{
+		color: $primary_theme_colour;
+		opacity: 1;
+	}
+	.home &{
+		opacity: 1;
+	}
+}
+
+/* content and anything else in paragraphs */
+
+article a,
+.colophon a,
+small p a{
+	&:link,
+	&:visited{
+		border-bottom: 1px solid $primary_theme_shade;
+		color: $primary_theme_shade;
+		padding-bottom: 1px;
+	}
+	&:hover,
+	&:active{
+		border-bottom: 1px solid $primary_theme_colour;
+		color: $primary_theme_colour;
+	}	
+}
+
+/* secondary navigation */
+
+.secondary ul a,
+.contact a,
+.at-large a,
+small ul a{
+	&:link,
+	&:visited{
+		color: $primary_theme_shade;
+	}
+	&:hover,
+	&:active{
+		border-bottom: 1px solid $primary_theme_colour;
+		color: $primary_theme_colour;
+	}
+}
+
+p.share a{
+	&:link,
+	&:visited{
+		border: none;
+	}
+}
+
+/* and finally remove the border for endnotes */
+
+a[rel=endnote],
+.excerpt h2 a{
+	&:link,
+	&:visited,
+	&:hover,
+	&:active{
+		border: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
