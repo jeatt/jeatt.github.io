@@ -4,7 +4,7 @@ title: "Dialling it back a notch"
 categories: [blog]
 lede: "Drums are the engine note of rock music. There's no easier way to accelerate the pace of a song than to build a crescendo of kick drum, floor tom and snare. But what happens if the drums are taken away? The answer is that the artist or band have to find a different way to put their foot down, and sometimes the result is a better song."
 endnotes: 
-- "This is part one of two loosely related blog posts on restriction in design. This one is about restraint. The second one is about constraint, and will be along at some point."
+- "This is one of three loosely related blog posts on restriction in design. This one is about taking things away; the second and third are about constraint and restraint."
 - "Top image is Manu Katché (sourced from Ulf Cronenburg via <a href='http://commons.wikimedia.org/wiki/File:Manu_Katch%C3%A9_2010.jpg'>Wikimedia Commons</a>)"
 - "Sadly that friend is no longer with us. If you're looking for a cause to support, you could do worse than <a href='http://www.mind.org.uk/'>Mind</a>."
 - "Not coincidentally Peter Gabriel recorded his third album <a href='http://www.soundonsound.com/sos/oct12/articles/sounding-off-1012.htm'>entirely without cymbals</a>."

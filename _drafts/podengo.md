@@ -1,9 +1,9 @@
 ---
 layout: project
-title: Pretend project
+title: Podengo
 categories: [work]
-lede: "We have a saboteur aboard. They were just sucked into space. The unexpected is our normal routine. Captain, why are we out here chasing comets? When has justice ever been as simple as a rule book? I'll alert the crew. But the probability of making a six is no greater than that of rolling a seven."
-hero: cat-two.jpg
+lede: "Podengo are a market research company who I was privileged enough to see go from a startup to a successful business. Their website is pink, but not as pink as it was."
+hero: podengo-hero.jpg
 responsibilities:
 - Planning and research
 - User interface design
@@ -19,6 +19,6 @@ Sure. You'd be surprised how far a hug goes with Geordi, or Worf. The unexpected
 
 Some days you get the bear, and some days the bear gets you. About four years. I got tired of hearing how young I looked. I'll be sure to note that in my log. Mr. Worf, you do remember how to fire phasers? Worf, It's better than music. It's jazz. Then maybe you should consider this: if anything happens to them, Starfleet is going to want a full investigation. Is it my imagination, or have tempers become a little frayed on the ship lately?
 
-## Design and development
+## Form design
 
 Fate. It protects fools, little children, and ships named "Enterprise." I think you've let your personal feelings cloud your judgement. They were just sucked into space. Fear is the true enemy, the only enemy. I've had twelve years to think about it. And if I had it to do over again, I would have grabbed the phaser and pointed it at you instead of them. Talk about going nowhere fast.
