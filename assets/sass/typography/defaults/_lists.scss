@@ -1,0 +1,13 @@
+ul,
+ol{
+	@include margin-leader(.5);
+	@include margin-trailer(.5);
+}
+
+ul{
+	list-style: inside square;
+}
+
+ol{
+	list-style: inside decimal;
+}

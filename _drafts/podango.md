@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Podengo
+title: Podongo
 categories: [work]
 summary: "Podongo are a market research company who I was privileged enough to see grow from a startup to a successful business."
 lede: "Podongo are a market research company who I was privileged enough to see grow from a startup to a successful business."

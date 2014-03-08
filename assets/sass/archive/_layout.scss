@@ -70,7 +70,6 @@ article{
 			@include gs-span(e,1,1);
 			@media screen and (min-width : $break-larger){
 				@include gs-span(e,1,1,(1,4));
-				@include margin-leader(3);
 			}
 		}
 	}
@@ -107,22 +106,46 @@ div.excerpt{
 }
 
 .archive{
+	@include gs-span(t,1,3);
+	@include clearfix;
+	clear: both;
 	section{
 		@include clearfix;
-		clear: both;
-		header{
-			@include clearfix;
-			@include gs-span(e,2,4,(2,4));
-
-			@include margin-trailer(.5);
-		}
-		img{
-			clear: both;
-			@include leader(0);
-			@include gs-span(e,2,2,(2,4));
-		}
-		div{
-			@include gs-span(e,3,4,(2,4));
+		@media screen and (min-width : $break-larger){
+			&:nth-of-type(3n+1){
+				@include gs-span(t,1,1,(1,3));
+				clear: both;
+				header{
+					@include gs-span(t,1,1,(1,1));
+					clear: both;
+				}
+				img{
+					@include gs-span(t,1,1,(1,1));
+					clear: both;
+				}
+			}
+			&:nth-of-type(3n+2){
+				@include gs-span(t,2,2,(1,3));
+				header{
+					@include gs-span(t,2,2,(2,2));
+					clear: both;
+				}
+				img{
+					@include gs-span(t,2,2,(2,2));
+					clear: both;
+				}			
+			}
+			&:nth-of-type(3n+3){
+				@include gs-span(t,3,3,(1,3));
+				header{
+					@include gs-span(t,3,3,(3,3));
+					clear: both;
+				}
+				img{
+					@include gs-span(t,3,3,(3,3));
+					clear: both;
+				}			
+			}
 		}
 	}
 }

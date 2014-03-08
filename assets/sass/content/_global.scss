@@ -1,0 +1,19 @@
+body{
+	border-top: $heavy_border;
+	/* add in some top-padding when header and nav split into two columns */
+	@media screen and (min-width : $bp-small){
+		@include padding-leader(.5);
+	}
+}
+
+.wrap{
+	margin: 0 auto;
+	width: 94%;
+	@media screen and (min-width : $bp-bigger){
+		max-width: 72em;
+	}
+}
+
+img{
+	max-width: 100%;
+}

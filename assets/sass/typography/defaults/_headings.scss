@@ -1,0 +1,22 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	@include secondary_typeface;
+	clear: both;
+}
+
+h1{
+	@include adjust-font-size-to($base-font-size * 2);
+	@include adjust-leading-to(.71);
+	@include margin-trailer(.5);
+}
+
+h2{
+	@include adjust-font-size-to($base-font-size * 1.4);
+	@include adjust-leading-to(.71);
+	@include margin-leader(.75);
+	@include trailer(.25);
+}

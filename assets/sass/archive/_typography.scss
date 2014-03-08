@@ -47,10 +47,12 @@ h2{
 		}
 	}
 	footer &{
-		border-bottom: 1px solid $default_border_colour;
 		@include adjust-font-size-to($base-font-size * 1.2);
 		@include margin-leader(0);
 		@include margin-trailer(.25);
+		@media screen and (min-width : $break-larger){
+			border-bottom: 1px solid $default_border_colour;
+		}
 	}
 	footer &{
 		@include leader(0);

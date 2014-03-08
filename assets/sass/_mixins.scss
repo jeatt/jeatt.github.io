@@ -1,0 +1,29 @@
+/* typefaces */
+
+@mixin primary_typeface{
+	font-family: "Enigma Regular", Georgia, 'Times New Roman', Times, serif;
+	font-size-adjust: 0.44;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin primary_typeface_bold{
+	font-family: "Enigma Bold", Georgia, 'Times New Roman', Times, serif;
+	font-size-adjust :0.45;
+	font-weight: bold;
+	font-style: normal;
+}
+
+@mixin primary_typeface_italic{
+	font-family: "Enigma Italic", Georgia, 'Times New Roman', Times, serif;
+	font-size-adjust: 0.46;
+	font-weight: normal;
+	font-style:italic;
+}
+
+@mixin secondary_typeface{
+	 font-family: "FS Clerkenwell Web Regular", Georgia, serif;
+	 font-size-adjust: 0.457;
+	 font-weight: normal;
+	 font-style: normal;
+}

@@ -1,0 +1,15 @@
+a{
+	@include transition (all .3s ease);
+	text-decoration: none;
+	&:link,
+	&:visited{
+		border-bottom: 1px solid $theme_shade;
+		color: $theme_shade;
+		padding-bottom: .1em;
+	}
+	&:hover,
+	&:active{
+		border-bottom: 1px solid $theme_color;
+		color: $theme_color;
+	}
+}

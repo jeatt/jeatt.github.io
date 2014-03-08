@@ -3,7 +3,7 @@ layout: default
 permalink: pretty
 ---
 
-<article role="main" class="main">
+<article role="main" class="post">
 	<header>
 		<h1>
 			{{ page.title }}
@@ -29,9 +29,6 @@ permalink: pretty
 		{{ page.content | markdownify }}
 	</div> <!-- /.content -->
 	<footer>
-		<p class="share">
-			<i class="fa fa-twitter"></i> <a href="http://twitter.com/">Leave a comment on Twitter</a>
-		</p>
 		{% if page.endnotes %}
 		<h2>Endnotes</h2>
 		<ol class="endnotes">
@@ -40,6 +37,9 @@ permalink: pretty
 			{% endfor %}
 		</ol>
 		{% endif %}
+		<p class="share">
+			<i class="fa fa-twitter"></i> <a href="http://twitter.com/">Leave a comment on Twitter</a>
+		</p>
 	</footer>
 </article>
 <nav class="secondary">

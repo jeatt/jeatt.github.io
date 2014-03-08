@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Getting started with Cloudfront: a tale of misery and redemption"
+title: "Getting started with Cloudfront"
 categories:
 - blog
+summary: "he subject of what should, and shouldn't, go into version control is a contentious one. My opinion is that only images which are part of the site structure&#8212;logos, icons etc.&#8212;should go into the repository."
 standfirst: "The subject of what should, and shouldn't, go into version control is a contentious one. My opinion is that only images which are part of the site structure&#8212;logos, icons etc.&#8212;should go into the repository. User uploaded content shouldn't. Because this website is hosted on Github and I wanted to keep my repository clean, I had to find somewhere else to put the images. I decided to go with Amazon S3 and Cloudfront. Setting it up was a horrible time for me."
 hero: clouds.jpg
 endnotes:

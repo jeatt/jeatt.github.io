@@ -1,11 +1,40 @@
-@import 'compass';
-@import 'compass/reset';
-@import 'fa/font-awesome';
-@import 'base';
-@import 'gridset';
-@import 'typography';
-@import 'anchors';
-@import 'navigation';
-@import 'media';
-@import 'icons';
-@import 'layout';
+/* compass dependencies */
+
+@import "compass";
+@import "compass/reset";
+
+/* vendor dependencies */
+
+@import "vendors/font-awesome/font-awesome";
+@import "vendors/gridset/klassen";
+
+/* local dependencies */
+
+@import "variables";
+@import "mixins";
+@import "breakpoints";
+
+/* typography */
+
+@import "typography/global";
+@import "typography/defaults/code";
+@import "typography/defaults/headings";
+@import "typography/defaults/icons";
+@import "typography/defaults/links";
+@import "typography/defaults/lists";
+@import "typography/defaults/paragraphs";
+@import "typography/defaults/quotes";
+@import "typography/defaults/smallprint";
+@import "typography/defaults/tables";
+
+
+/* content */
+
+@import "content/global";
+@import "content/banner";
+@import "content/navigation";
+@import "content/page";
+@import "content/archive";
+@import "content/home";
+@import "content/footer";
+

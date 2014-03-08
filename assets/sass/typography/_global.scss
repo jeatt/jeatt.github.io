@@ -1,0 +1,16 @@
+/* set baseline */
+
+$base-font-size: 18px;
+$base-line-height: ($base-font-size * 1.5);
+@include establish-baseline;
+
+/* 
+ * typeface mixins @ _mixins.scss
+ * default typeface and color 
+ *
+ */
+
+body{
+	@include primary_typeface;
+	color: $font_color;
+}

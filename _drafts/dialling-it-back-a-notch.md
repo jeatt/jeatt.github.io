@@ -2,6 +2,7 @@
 layout: post
 title: "Dialling it back a notch"
 categories: [blog]
+summary: "Drums are the engine note of rock music. There's no easier way to accelerate the pace of a song than to build a crescendo of kick drum, floor tom and snare. But what happens if the drums are taken away?"
 lede: "Drums are the engine note of rock music. There's no easier way to accelerate the pace of a song than to build a crescendo of kick drum, floor tom and snare. But what happens if the drums are taken away? The answer is that the artist or band have to find a different way to put their foot down, and sometimes the result is a better song."
 endnotes: 
 - "This is one of three loosely related blog posts on restriction in design. This one is about taking things away; the second and third are about constraint and restraint."

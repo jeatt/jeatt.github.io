@@ -4,6 +4,8 @@ title: In Defence of Crafting
 categories:
 - blog
 hero: william-blake-hecate.jpg
+summary:
+- Over the last few months there have been two articles, written by <a href="http://markboulton.co.uk/journal/notacraftsman">Mark Boulton</a> and <a href="http://csswizardry.com/2013/11/the-problems-with-crafting-code/">Harry Roberts</a>, on the use&#8212;or misuse&#8212;of the word &lsquo;craft&rsquo; by web designers. Neither of them like it but I'm quite fond of it myself.
 standfirst:
 - Over the last few months there have been two articles, written by <a href="http://markboulton.co.uk/journal/notacraftsman">Mark Boulton</a> and <a href="http://csswizardry.com/2013/11/the-problems-with-crafting-code/">Harry Roberts</a>, on the use&#8212;or misuse&#8212;of the word &lsquo;craft&rsquo; by web designers. Neither of them like it but I'm quite fond of it myself. When used properly it can be a great word to use in the context of web design.
 endnotes:

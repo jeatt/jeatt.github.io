@@ -1,4 +1,3 @@
-/* compass dependencies */
 /* line 17, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -64,7 +63,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* vendor dependencies */
 /*
  *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -749,26 +747,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .fa-turkish-lira:before,
 .fa-try:before { content: $fa-var-try; }
 .fa-plus-square-o:before { content: $fa-var-plus-square-o; } */
-/* local dependencies */
-/* color */
-/* orange */
-/* orange but with 25% more added black */
-/* borders */
-/* typefaces */
-/* 
- *
- * breakpoints for making big adjustments 
- * determined by line-length
- *
- */
 /* 
  * 
- * tweakpoints for making smalller adjustments
- * determined by circumstance and liable to change often
+ * we should declare some variables and mixins
  *
  */
-/* typography */
-/* set baseline */
+/* let's start with the typography */
+/* @mixin variant_typeface{
+	font-family: "NuOrder Regular", Arial, sans-serif;
+	font-size-adjust: 0.5;
+	font-style: normal;
+	font-weight: 400;
+} */
+/* and a default indent for paragraphs and lists */
+/* that was fun; let's try some colours next */
+/* orange */
+/* orange but with 25% more added black */
+/* social media colours */
+/*
+ *
+ * I think we should probably establish a baseline 
+ *
+ */
 /* line 61, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 * html {
   font-size: 112.5%;
@@ -780,12 +780,15 @@ html {
   line-height: 1.5em;
 }
 
-/* 
- * typeface mixins @ _mixins.scss
- * default typeface and color 
+/*
+ *
+ * Next, we'll need some breakpoints
  *
  */
-/* line 13, ../sass/typography/_global.scss */
+/* These are minor ones, for adjusting headings and small changes to the layout */
+/* These are major ones for switching layouts - determined by line-length */
+/* standard typographical elements */
+/* line 3, ../sass/archive/_typography.scss */
 body {
   font-family: "Enigma Regular", Georgia, 'Times New Roman', Times, serif;
   font-size-adjust: 0.44;
@@ -794,7 +797,25 @@ body {
   color: #2b2b2b;
 }
 
-/* line 6, ../sass/typography/defaults/_headings.scss */
+/* line 9, ../sass/archive/_typography.scss */
+em,
+i {
+  font-family: "Enigma Italic", Georgia, 'Times New Roman', Times, serif;
+  font-size-adjust: 0.46;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* line 14, ../sass/archive/_typography.scss */
+b,
+strong {
+  font-family: "Enigma Bold", Georgia, 'Times New Roman', Times, serif;
+  font-size-adjust: 0.45;
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* line 23, ../sass/archive/_typography.scss */
 h1,
 h2,
 h3,
@@ -808,15 +829,14 @@ h6 {
   clear: both;
 }
 
-/* line 11, ../sass/typography/defaults/_headings.scss */
+/* line 28, ../sass/archive/_typography.scss */
 h1 {
   font-size: 2em;
   line-height: 1.5em;
   line-height: 1.065em;
-  margin-bottom: 0.75em;
 }
 
-/* line 17, ../sass/typography/defaults/_headings.scss */
+/* line 33, ../sass/archive/_typography.scss */
 h2 {
   font-size: 1.4em;
   line-height: 2.14286em;
@@ -824,393 +844,679 @@ h2 {
   margin-top: 1.125em;
   margin-bottom: 0.375em;
 }
-
-/* line 1, ../sass/typography/defaults/_icons.scss */
-.fa-twitter {
-  color: #55acee;
+@media screen and (min-width: 61em) {
+  /* line 38, ../sass/archive/_typography.scss */
+  .secondary h2 {
+    margin-top: 0em;
+    padding-bottom: 0.225em;
+  }
+}
+@media screen and (min-width: 61em) {
+  /* line 44, ../sass/archive/_typography.scss */
+  nav h2 {
+    border-bottom: 1px solid #cacaca;
+  }
+}
+/* line 49, ../sass/archive/_typography.scss */
+footer h2 {
+  font-size: 1.2em;
+  line-height: 1.25em;
+  margin-top: 0em;
+  margin-bottom: 0.375em;
+}
+@media screen and (min-width: 61em) {
+  /* line 49, ../sass/archive/_typography.scss */
+  footer h2 {
+    border-bottom: 1px solid #cacaca;
+  }
+}
+/* line 57, ../sass/archive/_typography.scss */
+footer h2 {
+  margin-top: 0em;
+  font-size: 1.2em;
+  line-height: 1.25em;
 }
 
-/* line 1, ../sass/typography/defaults/_links.scss */
-a {
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  text-decoration: none;
-}
-/* line 5, ../sass/typography/defaults/_links.scss */
-a:link, a:visited {
-  border-bottom: 1px solid #bf4400;
-  color: #bf4400;
-  padding-bottom: .1em;
-}
-/* line 11, ../sass/typography/defaults/_links.scss */
-a:hover, a:active {
-  border-bottom: 1px solid #ff5b00;
-  color: #ff5b00;
+/* line 63, ../sass/archive/_typography.scss */
+h3 {
+  font-size: 1.2em;
+  line-height: 1.25em;
+  line-height: 1.065em;
+  margin-top: 1.125em;
+  margin-bottom: 0.375em;
 }
 
-/* line 2, ../sass/typography/defaults/_lists.scss */
-ul,
-ol {
+/* line 76, ../sass/archive/_typography.scss */
+.lede,
+.standfirst,
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p {
+  text-indent: 0;
+}
+
+/* line 80, ../sass/archive/_typography.scss */
+p {
+  text-indent: 3%;
+  clear: both;
+}
+/* line 84, ../sass/archive/_typography.scss */
+p.lede, p.standfirst {
+  font-size: 1.1em;
+  line-height: 1.36364em;
+  line-height: 1.65em;
+  margin-bottom: 1.5em;
+}
+/* line 90, ../sass/archive/_typography.scss */
+p.meta, p.share {
+  font-family: "Enigma Italic", Georgia, 'Times New Roman', Times, serif;
+  font-size-adjust: 0.46;
+  font-weight: normal;
+  font-style: italic;
+  margin-top: 0.375em;
+}
+/* line 93, ../sass/archive/_typography.scss */
+p.meta time, p.share time {
+  font-family: "Enigma Bold", Georgia, 'Times New Roman', Times, serif;
+  font-size-adjust: 0.45;
+  font-weight: bold;
+  font-style: normal;
+}
+/* line 97, ../sass/archive/_typography.scss */
+p.share {
   margin-top: 0.75em;
-  margin-bottom: 0.75em;
 }
-
-/* line 7, ../sass/typography/defaults/_lists.scss */
-ul {
-  list-style: inside square;
+@media screen and (min-width: 43em) {
+  /* line 97, ../sass/archive/_typography.scss */
+  p.share {
+    margin-bottom: 1.5em;
+  }
 }
-
-/* line 11, ../sass/typography/defaults/_lists.scss */
-ol {
-  list-style: inside decimal;
-}
-
-/* indent all paragraphs in main content area except for the first one and any which immediately follow headings */
-/* line 4, ../sass/typography/defaults/_paragraphs.scss */
-.content p {
-  text-indent: 1em;
-}
-/* line 6, ../sass/typography/defaults/_paragraphs.scss */
-.content p:first-of-type {
+/* line 103, ../sass/archive/_typography.scss */
+footer p {
   text-indent: 0;
 }
-/* line 15, ../sass/typography/defaults/_paragraphs.scss */
-.content h1 + p,
-.content h2 + p,
-.content h3 + p,
-.content h4 + p,
-.content h5 + p,
-.content h6 + p {
-  text-indent: 0;
+/* line 105, ../sass/archive/_typography.scss */
+footer p.share {
+  line-height: 1.065em;
+  margin-top: 0em;
+}
+/* line 111, ../sass/archive/_typography.scss */
+footer[role=contentinfo] p {
+  padding-bottom: 0.75em;
 }
 
-/* line 1, ../sass/typography/defaults/_smallprint.scss */
-small {
+/* line 116, ../sass/archive/_typography.scss */
+a[rel=endnote] {
+  font-size: 0.7em;
+  line-height: 2.14286em;
+  vertical-align: super;
+}
+
+/* line 122, ../sass/archive/_typography.scss */
+small,
+.endnotes {
   font-size: 0.9em;
   line-height: 1.66667em;
 }
 
-/* content */
-/* line 1, ../sass/content/_global.scss */
-body {
-  border-top: 4px solid #ff5b00;
-  /* add in some top-padding when header and nav split into two columns */
-}
-@media screen and (min-width: 40em) {
-  /* line 1, ../sass/content/_global.scss */
-  body {
-    padding-top: 0.75em;
-  }
-}
-
-/* line 9, ../sass/content/_global.scss */
-.wrap {
-  margin: 0 auto;
-  width: 94%;
-}
-@media screen and (min-width: 72em) {
-  /* line 9, ../sass/content/_global.scss */
-  .wrap {
-    max-width: 72em;
-  }
-}
-
-/* line 17, ../sass/content/_global.scss */
-img {
-  max-width: 100%;
-}
-
-/* line 1, ../sass/content/_banner.scss */
-.banner {
-  text-align: center;
-  /* left align page title */
-}
-/* line 3, ../sass/content/_banner.scss */
-.banner h1 {
-  font-size: 1.5em;
-  line-height: 2em;
-  line-height: 1.5em;
-  margin-bottom: 0.375em;
-  font-family: "FS Clerkenwell Web Regular", Georgia, serif;
-  font-size-adjust: 0.457;
-  font-weight: normal;
-  font-style: normal;
-}
-/* line 10, ../sass/content/_banner.scss */
-.banner a:link,
-.banner a:visited {
-  border: none;
-  color: #2b2b2b;
-}
-/* line 13, ../sass/content/_banner.scss */
-.banner a:link span,
-.banner a:visited span {
-  color: #ff5b00;
-}
-/* line 18, ../sass/content/_banner.scss */
-.banner a:hover,
-.banner a:active {
-  color: #ff5b00;
-}
-/* line 20, ../sass/content/_banner.scss */
-.banner a:hover span,
-.banner a:active span {
-  color: #2b2b2b;
-}
-@media screen and (min-width: 40em) {
-  /* line 1, ../sass/content/_banner.scss */
-  .banner {
-    display: block;
-    float: left;
-    margin-left: 0;
-    margin-right: -100%;
-    width: 58.8%;
-    text-align: left;
-  }
-}
-
-/* primary navigation */
-/* line 3, ../sass/content/_navigation.scss */
-nav.primary {
-  font-size: 1.2em;
-  line-height: 1.25em;
-  line-height: 0em;
-  margin-bottom: 2.25em;
-  font-family: "FS Clerkenwell Web Regular", Georgia, serif;
-  font-size-adjust: 0.457;
-  font-weight: normal;
-  font-style: normal;
-  text-transform: uppercase;
-  text-align: center;
-  /* move main navigation to right hand column */
-}
-/* line 12, ../sass/content/_navigation.scss */
-nav.primary li {
-  display: inline;
-}
-/* line 14, ../sass/content/_navigation.scss */
-nav.primary li:after {
-  color: #165f8f;
-  content: " /";
-}
-/* line 18, ../sass/content/_navigation.scss */
-nav.primary li:last-child {
-  padding-right: none;
-}
-/* line 20, ../sass/content/_navigation.scss */
-nav.primary li:last-child:after {
-  content: "";
-}
-/* line 26, ../sass/content/_navigation.scss */
-nav.primary a:link,
-nav.primary a:visited {
-  border: none;
-  color: #2b2b2b;
-  opacity: .75;
-}
-/* line 30, ../sass/content/_navigation.scss */
-nav.primary a:link.current,
-nav.primary a:visited.current {
-  opacity: 1;
-}
-/* line 33, ../sass/content/_navigation.scss */
-.home nav.primary a:link, .home
-nav.primary a:visited {
-  opacity: 1;
-}
-/* line 38, ../sass/content/_navigation.scss */
-nav.primary a:hover,
-nav.primary a:active {
-  color: #ff5b00;
-  opacity: 1;
-}
-@media screen and (min-width: 40em) {
-  /* line 3, ../sass/content/_navigation.scss */
-  nav.primary {
-    font-size: 1.5em;
-    line-height: 2em;
-    line-height: 1.5em;
-    display: block;
-    float: left;
-    margin-left: 61.8%;
-    margin-right: -100%;
-    width: 38.2%;
-    margin-bottom: 0.75em;
-    text-align: left;
-    text-transform: capitalize;
-  }
-  /* line 50, ../sass/content/_navigation.scss */
-  nav.primary ul {
-    margin-top: 0em;
-  }
-}
-
-/* secondary navigation */
-/* line 59, ../sass/content/_navigation.scss */
-nav.secondary h2 {
-  border-bottom: 1px solid #cacaca;
-  padding-bottom: .1em;
-}
-/* line 63, ../sass/content/_navigation.scss */
-nav.secondary ul {
-  list-style: outside none;
-}
-
-/* footer navigation */
-/* line 70, ../sass/content/_navigation.scss */
-.contact {
-  margin-bottom: 0.75em;
-}
-
-/* line 74, ../sass/content/_navigation.scss */
-.contact ul {
-  margin-bottom: 1.5em;
-}
-
-/* line 79, ../sass/content/_navigation.scss */
-small ul li {
-  display: inline;
-}
-/* line 81, ../sass/content/_navigation.scss */
-small ul li:after {
-  color: #165f8f;
-  content: " /";
-}
-/* line 85, ../sass/content/_navigation.scss */
-small ul li:last-child {
-  padding-right: none;
-}
-/* line 87, ../sass/content/_navigation.scss */
-small ul li:last-child:after {
-  content: "";
-}
-
-/* line 2, ../sass/content/_page.scss */
-.post,
-.page {
+/* template and section specific overrides */
+/* line 128, ../sass/archive/_typography.scss */
+header[role=banner] {
   overflow: hidden;
   *zoom: 1;
-  margin-bottom: 2.25em;
-  clear: both;
-  /* @media screen and (min-width : $bp-small){
-  	header,
-  	footer,
-  	.content,
-  	.lede,
-  	.standfirst{
-  		@include gs-span(e,2,5);
-  		clear: both;
-  	}
-  	header{
-  		text-align: left;
-  		p{
-  			&:after{
-  				content: "";
-  			}
-  			&:before{
-  				content: "";
-  			}			
-  		}
+  font-family: "FS Clerkenwell Web Regular", Georgia, serif;
+  font-size-adjust: 0.457;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+}
+/* line 132, ../sass/archive/_typography.scss */
+header[role=banner] .logotype {
+  font-size: 1.4em;
+  line-height: 2.14286em;
+}
+@media screen and (min-width: 37em) {
+  /* line 132, ../sass/archive/_typography.scss */
+  header[role=banner] .logotype {
+    font-size: 1.5em;
+    line-height: 2em;
+    text-align: left;
+  }
+}
+/* line 139, ../sass/archive/_typography.scss */
+header[role=banner] nav {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  line-height: 1.25em;
+}
+@media screen and (min-width: 37em) {
+  /* line 139, ../sass/archive/_typography.scss */
+  header[role=banner] nav {
+    font-size: 1.4em;
+    line-height: 2.14286em;
+    text-transform: capitalize;
+  }
+}
+
+/* line 151, ../sass/archive/_typography.scss */
+.content ul,
+.content ol {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+  list-style-position: inside;
+}
+@media screen and (max-width: 43em) {
+  /* line 151, ../sass/archive/_typography.scss */
+  .content ul,
+  .content ol {
+    padding-left: 3%;
+  }
+}
+@media screen and (min-width: 43em) {
+  /* line 151, ../sass/archive/_typography.scss */
+  .content ul,
+  .content ol {
+    list-style-position: outside;
+  }
+}
+/* line 162, ../sass/archive/_typography.scss */
+.content ul {
+  list-style-type: square;
+}
+/* line 165, ../sass/archive/_typography.scss */
+.content ol {
+  list-style-type: decimal;
+}
+
+/* line 170, ../sass/archive/_typography.scss */
+.endnotes {
+  list-style: inside decimal;
+}
+
+/* line 174, ../sass/archive/_typography.scss */
+li {
+  line-height: 1.275em;
+  margin-bottom: 0.375em;
+}
+
+/* line 179, ../sass/archive/_typography.scss */
+footer[role=contentinfo] {
+  margin-top: 1.5em;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  /* small ul{
+  	@media screen and (min-width : $break-larger){
+  		text-align: right;
   	}
   } */
 }
-/* line 6, ../sass/content/_page.scss */
-.post header,
-.page header {
-  margin-bottom: 1.5em;
-  text-align: center;
+
+/* Default styles - links contained within text are the default font colour to make reading easier */
+/* a{
+	&:link{
+		border-bottom: 1px solid $theme_accent;
+		color: $theme_accent;
+		padding-bottom: .1em;
+		text-decoration: none;
+	}
+	&:visited{
+
+	}
+	&:hover{
+		color: $primary_theme_colour;
+		border-bottom: 1px solid $theme_accent;
+	}
+	&:active{
+	}
+	.logotype &{
+		color: $primary_font_colour;
+		border-bottom: none;
+	}
+	[role=navigation] &{
+		color: $primary_font_colour;
+		border: none;
+		padding-bottom: none;
+		&:hover{
+			color: $primary_theme_colour;
+		}
+	}
+	.post &{
+		border-bottom: 1px solid $primary_font_colour;
+		color: $primary_font_colour;
+		&:hover{
+			background: red;
+		}
+	}
+	.secondary ul &,
+	.contact ul &{
+		border: none;
+	}
+} */
+/* for reasons of maintenance and prevention of banging head against wall, I'm going to be very specific about link styles */
+/* the only two constants: no text decoration, and a little easing */
+/* line 48, ../sass/archive/_anchors.scss */
+a {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  text-decoration: none;
 }
-/* line 9, ../sass/content/_page.scss */
-.post header h1,
-.page header h1 {
-  margin-bottom: 0em;
+
+/* and from this point on it's all about context ... */
+/* global header */
+/* line 59, ../sass/archive/_anchors.scss */
+a.logotype:link, a.logotype:visited {
+  color: #2b2b2b;
 }
-/* line 15, ../sass/content/_page.scss */
-.post .lede,
-.post .standfirst,
-.page .lede,
-.page .standfirst {
-  font-size: 1.1em;
-  line-height: 1.36364em;
-  line-height: 1.5em;
-  margin-bottom: 1.5em;
-  clear: both;
+/* line 61, ../sass/archive/_anchors.scss */
+a.logotype:link span, a.logotype:visited span {
+  color: #ff5b00;
 }
-/* line 22, ../sass/content/_page.scss */
-.post .hero,
-.page .hero {
+/* line 66, ../sass/archive/_anchors.scss */
+a.logotype:hover, a.logotype:active {
+  color: #ff5b00;
+}
+
+/* main navigation */
+/* line 72, ../sass/archive/_anchors.scss */
+nav[role=navigation] a {
+  z-index: 999;
+}
+/* line 75, ../sass/archive/_anchors.scss */
+nav[role=navigation] a:link, nav[role=navigation] a:visited {
+  color: #2b2b2b;
+  opacity: .75;
+}
+/* line 78, ../sass/archive/_anchors.scss */
+nav[role=navigation] a:link.current, nav[role=navigation] a:visited.current {
+  opacity: 1;
+  padding-top: .25em;
+}
+/* line 84, ../sass/archive/_anchors.scss */
+nav[role=navigation] a:hover, nav[role=navigation] a:active {
+  color: #ff5b00;
+  opacity: 1;
+}
+/* line 88, ../sass/archive/_anchors.scss */
+.home nav[role=navigation] a {
+  opacity: 1;
+}
+
+/* content and anything else in paragraphs */
+/* line 99, ../sass/archive/_anchors.scss */
+article a:link, article a:visited,
+.colophon a:link,
+.colophon a:visited,
+small p a:link,
+small p a:visited {
+  border-bottom: 1px solid #bf4400;
+  color: #bf4400;
+  padding-bottom: 1px;
+}
+/* line 105, ../sass/archive/_anchors.scss */
+article a:hover, article a:active,
+.colophon a:hover,
+.colophon a:active,
+small p a:hover,
+small p a:active {
+  border-bottom: 1px solid #ff5b00;
+  color: #ff5b00;
+}
+
+/* secondary navigation */
+/* line 118, ../sass/archive/_anchors.scss */
+.secondary ul a:link, .secondary ul a:visited,
+.contact a:link,
+.contact a:visited,
+.at-large a:link,
+.at-large a:visited,
+small ul a:link,
+small ul a:visited {
+  color: #bf4400;
+}
+/* line 122, ../sass/archive/_anchors.scss */
+.secondary ul a:hover, .secondary ul a:active,
+.contact a:hover,
+.contact a:active,
+.at-large a:hover,
+.at-large a:active,
+small ul a:hover,
+small ul a:active {
+  border-bottom: 1px solid #ff5b00;
+  color: #ff5b00;
+}
+
+/* line 130, ../sass/archive/_anchors.scss */
+p.share a:link, p.share a:visited {
+  border: none;
+}
+
+/* and finally remove the border for endnotes */
+/* line 142, ../sass/archive/_anchors.scss */
+a[rel=endnote]:link, a[rel=endnote]:visited, a[rel=endnote]:hover, a[rel=endnote]:active,
+.excerpt h2 a:link,
+.excerpt h2 a:visited,
+.excerpt h2 a:hover,
+.excerpt h2 a:active {
+  border: none;
+}
+
+/* line 2, ../sass/archive/_icons.scss */
+.fa-facebook,
+.fa-facebook-square {
+  color: #3b5998;
+}
+
+/* line 6, ../sass/archive/_icons.scss */
+.fa-twitter {
+  color: #55acee;
+}
+
+/* line 11, ../sass/archive/_icons.scss */
+.fa-rocket,
+.fa-building-o {
+  color: #ff5b00;
+}
+
+/* primary navigation */
+/* line 5, ../sass/archive/_navigation.scss */
+.primary ul li {
+  display: inline;
+}
+/* line 7, ../sass/archive/_navigation.scss */
+.primary ul li:after {
+  color: #165f8f;
+  content: " /";
+}
+/* line 11, ../sass/archive/_navigation.scss */
+.primary ul li:last-child {
+  padding-right: none;
+}
+/* line 13, ../sass/archive/_navigation.scss */
+.primary ul li:last-child:after {
+  content: "";
+}
+
+/* secondary navigation */
+/* line 23, ../sass/archive/_navigation.scss */
+.secondary {
+  overflow: hidden;
+  *zoom: 1;
   display: block;
   float: left;
   margin-left: 0;
   margin-right: -100%;
   width: 100%;
+  margin-top: 1.5em;
   margin-bottom: 1.5em;
+  border-top: 2px solid #cacaca;
   clear: both;
 }
-/* line 28, ../sass/content/_page.scss */
-.post .content,
-.page .content {
-  clear: both;
-}
-/* line 33, ../sass/content/_page.scss */
-.post footer h2,
-.page footer h2 {
-  font-size: 1.1em;
-  line-height: 1.36364em;
-  border-bottom: 1px solid #cacaca;
-  padding-bottom: .1em;
-}
-/* line 39, ../sass/content/_page.scss */
-.post footer ol,
-.post footer ul,
-.page footer ol,
-.page footer ul {
-  font-size: 0.9em;
-  line-height: 1.66667em;
-  line-height: 1.35em;
-}
-@media screen and (min-width: 27.5em) {
-  /* line 2, ../sass/content/_page.scss */
-  .post,
-  .page {
-    margin-top: 4.5em;
+@media screen and (min-width: 37em) {
+  /* line 32, ../sass/archive/_navigation.scss */
+  .secondary section:first-of-type {
+    display: block;
+    float: left;
+    margin-left: 0;
+    margin-right: -100%;
+    width: 48.5%;
+  }
+  /* line 39, ../sass/archive/_navigation.scss */
+  .secondary section:last-of-type {
+    display: block;
+    float: left;
+    margin-left: 51.5%;
+    margin-right: -100%;
+    width: 48.5%;
   }
 }
+@media screen and (min-width: 37em) and (min-width: 61em) {
+  /* line 32, ../sass/archive/_navigation.scss */
+  .secondary section:first-of-type {
+    display: block;
+    float: left;
+    margin-left: 0;
+    margin-right: -100%;
+    width: 100%;
+    clear: both;
+  }
+}
+@media screen and (min-width: 37em) and (min-width: 61em) {
+  /* line 39, ../sass/archive/_navigation.scss */
+  .secondary section:last-of-type {
+    display: block;
+    float: left;
+    margin-left: 0;
+    margin-right: -100%;
+    width: 100%;
+    clear: both;
+  }
+}
+@media screen and (min-width: 61em) {
+  /* line 23, ../sass/archive/_navigation.scss */
+  .secondary {
+    border: none;
+    clear: none;
+    display: block;
+    float: left;
+    margin-left: 82.4%;
+    margin-right: -100%;
+    width: 17.6%;
+    margin-top: 9.75em;
+    margin-bottom: 0em;
+  }
+  /* line 54, ../sass/archive/_navigation.scss */
+  .secondary section {
+    margin-bottom: 1.5em;
+  }
+}
+
+/* footer navigation */
+/* line 62, ../sass/archive/_navigation.scss */
+.contact {
+  margin-bottom: 0.75em;
+}
+
+/* line 66, ../sass/archive/_navigation.scss */
+.contact ul {
+  margin-bottom: 1.5em;
+}
+
+/* line 71, ../sass/archive/_navigation.scss */
+small ul li {
+  display: inline;
+}
+/* line 73, ../sass/archive/_navigation.scss */
+small ul li:after {
+  color: #165f8f;
+  content: " /";
+}
+/* line 77, ../sass/archive/_navigation.scss */
+small ul li:last-child {
+  padding-right: none;
+}
+/* line 79, ../sass/archive/_navigation.scss */
+small ul li:last-child:after {
+  content: "";
+}
+
+/* Images */
+/* line 6, ../sass/archive/_media.scss */
+img,
+object,
+embed,
+iframe {
+  clear: both;
+  max-width: 100%;
+}
+/* line 9, ../sass/archive/_media.scss */
+img.hero,
+object.hero,
+embed.hero,
+iframe.hero {
+  margin-bottom: 1.5em;
+}
+/* line 12, ../sass/archive/_media.scss */
+.content img, .content
+object, .content
+embed, .content
+iframe {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+/* line 1, ../sass/archive/_layout.scss */
+body {
+  border-top: 4px solid #ff5b00;
+}
+
+/* line 5, ../sass/archive/_layout.scss */
+.wrap {
+  margin: 0 auto;
+  width: 85%;
+}
 @media screen and (min-width: 72em) {
-  /* line 2, ../sass/content/_page.scss */
-  .post,
-  .page {
+  /* line 5, ../sass/archive/_layout.scss */
+  .wrap {
+    max-width: 72em;
+  }
+}
+
+/* line 13, ../sass/archive/_layout.scss */
+header[role=banner] {
+  overflow: hidden;
+  *zoom: 1;
+  margin-bottom: 1.5em;
+}
+@media screen and (min-width: 43em) {
+  /* line 13, ../sass/archive/_layout.scss */
+  header[role=banner] {
+    margin-bottom: 4.5em;
+  }
+}
+@media screen and (min-width: 43em) {
+  /* line 19, ../sass/archive/_layout.scss */
+  header[role=banner] .logotype {
+    display: block;
+    float: left;
+    margin-left: 0;
+    margin-right: -100%;
+    width: 48.5%;
+  }
+}
+@media screen and (min-width: 43em) {
+  /* line 24, ../sass/archive/_layout.scss */
+  header[role=banner] nav {
+    display: block;
+    float: left;
+    margin-left: 51.5%;
+    margin-right: -100%;
+    width: 48.5%;
+  }
+}
+
+/* line 31, ../sass/archive/_layout.scss */
+article {
+  overflow: hidden;
+  *zoom: 1;
+  display: block;
+  float: left;
+  margin-left: 0;
+  margin-right: -100%;
+  width: 100%;
+}
+@media screen and (min-width: 61em) {
+  /* line 31, ../sass/archive/_layout.scss */
+  article {
     display: block;
     float: left;
     margin-left: 0;
     margin-right: -100%;
     width: 79.4%;
   }
-  /* line 52, ../sass/content/_page.scss */
-  .post header,
-  .post .content,
-  .post .lede,
-  .post .standfirst,
-  .page header,
-  .page .content,
-  .page .lede,
-  .page .standfirst {
+}
+/* line 37, ../sass/archive/_layout.scss */
+article header {
+  margin-bottom: 1.875em;
+}
+@media screen and (min-width: 61em) {
+  /* line 37, ../sass/archive/_layout.scss */
+  article header {
     display: block;
     float: left;
     margin-left: 25.94458%;
     margin-right: -100%;
     width: 74.05542%;
+    clear: left;
   }
-  /* line 55, ../sass/content/_page.scss */
-  .post header,
-  .page header {
-    text-align: left;
+}
+@media screen and (min-width: 61em) {
+  /* line 45, ../sass/archive/_layout.scss */
+  article .lede,
+  article .standfirst {
+    display: block;
+    float: left;
+    margin-left: 25.94458%;
+    margin-right: -100%;
+    width: 74.05542%;
+    clear: left;
   }
-  /* line 58, ../sass/content/_page.scss */
-  .post footer,
-  .page footer {
+}
+@media screen and (min-width: 61em) {
+  /* line 51, ../sass/archive/_layout.scss */
+  article .hero {
+    overflow: hidden;
+    *zoom: 1;
+    display: block;
+    float: left;
+    margin-left: 0;
+    margin-right: -100%;
+    width: 100%;
+    clear: left;
+  }
+}
+/* line 58, ../sass/archive/_layout.scss */
+article .content {
+  margin-bottom: 2.25em;
+}
+@media screen and (min-width: 43em) {
+  /* line 58, ../sass/archive/_layout.scss */
+  article .content {
+    display: block;
+    float: left;
+    margin-left: 20.6%;
+    margin-right: -100%;
+    width: 79.4%;
+  }
+}
+@media screen and (min-width: 61em) {
+  /* line 58, ../sass/archive/_layout.scss */
+  article .content {
+    display: block;
+    float: left;
+    margin-left: 25.94458%;
+    margin-right: -100%;
+    width: 74.05542%;
+    clear: left;
+  }
+}
+@media screen and (min-width: 43em) {
+  /* line 68, ../sass/archive/_layout.scss */
+  article footer {
+    display: block;
+    float: left;
+    margin-left: 0;
+    margin-right: -100%;
+    width: 17.6%;
+  }
+}
+@media screen and (min-width: 43em) and (min-width: 61em) {
+  /* line 68, ../sass/archive/_layout.scss */
+  article footer {
     display: block;
     float: left;
     margin-left: 0;
@@ -1219,44 +1525,15 @@ small ul li:last-child:after {
   }
 }
 
-/* line 1, ../sass/content/_archive.scss */
-.archive {
+/* line 78, ../sass/archive/_layout.scss */
+div.excerpt {
+  overflow: hidden;
+  *zoom: 1;
   clear: both;
-  /* split into two columns */
-  /* split into three columns */
 }
-/* line 3, ../sass/content/_archive.scss */
-.archive article {
-  margin-bottom: 1.5em;
-}
-/* line 5, ../sass/content/_archive.scss */
-.archive article header {
-  margin-bottom: 0.75em;
-}
-/* line 8, ../sass/content/_archive.scss */
-.archive article img {
-  margin-bottom: 0.375em;
-}
-/* line 11, ../sass/content/_archive.scss */
-.archive article h2 {
-  margin-top: 0em;
-  margin-bottom: 0em;
-}
-/* line 14, ../sass/content/_archive.scss */
-.archive article h2 a {
-  border: none;
-}
-@media screen and (min-width: 40em) {
-  /* line 1, ../sass/content/_archive.scss */
-  .archive {
-    overflow: hidden;
-    *zoom: 1;
-    padding-top: 3em;
-  }
-}
-@media screen and (min-width: 27.5em) and (max-width: 72em) {
-  /* line 26, ../sass/content/_archive.scss */
-  .archive article:nth-of-type(2n+1) {
+@media screen and (min-width: 43em) {
+  /* line 83, ../sass/archive/_layout.scss */
+  div.excerpt:nth-of-type(odd) {
     display: block;
     float: left;
     margin-left: 0;
@@ -1264,8 +1541,25 @@ small ul li:last-child:after {
     width: 48.5%;
     clear: left;
   }
-  /* line 30, ../sass/content/_archive.scss */
-  .archive article:nth-of-type(2n+2) {
+  /* line 86, ../sass/archive/_layout.scss */
+  div.excerpt:nth-of-type(odd) header {
+    display: block;
+    float: left;
+    margin-left: 0;
+    margin-right: -100%;
+    width: 100%;
+  }
+  /* line 89, ../sass/archive/_layout.scss */
+  div.excerpt:nth-of-type(odd) img {
+    clear: both;
+    display: block;
+    float: left;
+    margin-left: 0;
+    margin-right: -100%;
+    width: 100%;
+  }
+  /* line 94, ../sass/archive/_layout.scss */
+  div.excerpt:nth-of-type(even) {
     display: block;
     float: left;
     margin-left: 51.5%;
@@ -1273,10 +1567,44 @@ small ul li:last-child:after {
     width: 48.5%;
     clear: right;
   }
+  /* line 97, ../sass/archive/_layout.scss */
+  div.excerpt:nth-of-type(even) header {
+    display: block;
+    float: left;
+    margin-left: 0;
+    margin-right: -100%;
+    width: 100%;
+  }
+  /* line 100, ../sass/archive/_layout.scss */
+  div.excerpt:nth-of-type(even) img {
+    clear: both;
+    display: block;
+    float: left;
+    margin-left: 0;
+    margin-right: -100%;
+    width: 100%;
+  }
 }
-@media screen and (min-width: 72em) {
-  /* line 39, ../sass/content/_archive.scss */
-  .archive article:nth-of-type(3n+1) {
+
+/* line 108, ../sass/archive/_layout.scss */
+.archive {
+  display: block;
+  float: left;
+  margin-left: 0;
+  margin-right: -100%;
+  width: 100.0%;
+  overflow: hidden;
+  *zoom: 1;
+  clear: both;
+}
+/* line 112, ../sass/archive/_layout.scss */
+.archive section {
+  overflow: hidden;
+  *zoom: 1;
+}
+@media screen and (min-width: 61em) {
+  /* line 115, ../sass/archive/_layout.scss */
+  .archive section:nth-of-type(3n+1) {
     display: block;
     float: left;
     margin-left: 0;
@@ -1284,134 +1612,146 @@ small ul li:last-child:after {
     width: 31.33333%;
     clear: both;
   }
-  /* line 43, ../sass/content/_archive.scss */
-  .archive article:nth-of-type(3n+2) {
+  /* line 118, ../sass/archive/_layout.scss */
+  .archive section:nth-of-type(3n+1) header {
+    display: block;
+    float: left;
+    margin-left: 0;
+    margin-right: -100%;
+    width: 100%;
+    clear: both;
+  }
+  /* line 122, ../sass/archive/_layout.scss */
+  .archive section:nth-of-type(3n+1) img {
+    display: block;
+    float: left;
+    margin-left: 0;
+    margin-right: -100%;
+    width: 100%;
+    clear: both;
+  }
+  /* line 127, ../sass/archive/_layout.scss */
+  .archive section:nth-of-type(3n+2) {
     display: block;
     float: left;
     margin-left: 34.33333%;
     margin-right: -100%;
     width: 31.33333%;
   }
-  /* line 46, ../sass/content/_archive.scss */
-  .archive article:nth-of-type(3n+3) {
+  /* line 129, ../sass/archive/_layout.scss */
+  .archive section:nth-of-type(3n+2) header {
+    display: block;
+    float: left;
+    margin-left: 0;
+    margin-right: -100%;
+    width: 100%;
+    clear: both;
+  }
+  /* line 133, ../sass/archive/_layout.scss */
+  .archive section:nth-of-type(3n+2) img {
+    display: block;
+    float: left;
+    margin-left: 0;
+    margin-right: -100%;
+    width: 100%;
+    clear: both;
+  }
+  /* line 138, ../sass/archive/_layout.scss */
+  .archive section:nth-of-type(3n+3) {
     display: block;
     float: left;
     margin-left: 68.66667%;
     margin-right: -100%;
     width: 31.33333%;
   }
-}
-
-/* line 1, ../sass/content/_footer.scss */
-.contentinfo {
-  margin-top: 2.25em;
-  border-top: 4px solid #ff5b00;
-  clear: both;
-  /* split contact section into two colums */
-  /* split small print across two columns */
-  /* split main footer section--contact and colophon--into two columns */
-}
-/* line 5, ../sass/content/_footer.scss */
-.contentinfo p {
-  margin-bottom: 0.75em;
-}
-/* line 9, ../sass/content/_footer.scss */
-.contentinfo ol,
-.contentinfo ul {
-  list-style: outside none;
-}
-/* line 12, ../sass/content/_footer.scss */
-.contentinfo h2 {
-  border-bottom: 1px solid #cacaca;
-  padding-bottom: .1em;
-}
-/* line 16, ../sass/content/_footer.scss */
-.contentinfo small {
-  margin-top: 1.5em;
-  border-top: 1px solid #cacaca;
-  clear: both;
-  display: block;
-  text-align: center;
-}
-@media screen and (min-width: 27.5em) and (max-width: 40em) {
-  /* line 26, ../sass/content/_footer.scss */
-  .contentinfo .contact div {
-    overflow: hidden;
-    *zoom: 1;
-  }
-  /* line 28, ../sass/content/_footer.scss */
-  .contentinfo .contact div:first-of-type {
+  /* line 140, ../sass/archive/_layout.scss */
+  .archive section:nth-of-type(3n+3) header {
     display: block;
     float: left;
     margin-left: 0;
     margin-right: -100%;
-    width: 48.5%;
+    width: 100%;
+    clear: both;
   }
-  /* line 31, ../sass/content/_footer.scss */
-  .contentinfo .contact div:last-of-type {
+  /* line 144, ../sass/archive/_layout.scss */
+  .archive section:nth-of-type(3n+3) img {
     display: block;
     float: left;
-    margin-left: 51.5%;
+    margin-left: 0;
     margin-right: -100%;
-    width: 48.5%;
-  }
-  /* line 36, ../sass/content/_footer.scss */
-  .contentinfo .colophon {
+    width: 100%;
     clear: both;
   }
 }
-@media screen and (min-width: 35em) {
-  /* line 42, ../sass/content/_footer.scss */
-  .contentinfo small {
-    padding-top: 0.75em;
-    text-align: left;
-  }
-  /* line 45, ../sass/content/_footer.scss */
-  .contentinfo small p {
+
+/* line 153, ../sass/archive/_layout.scss */
+footer[role=contentinfo] {
+  border-top: 5px solid #ff5b00;
+  clear: both;
+}
+@media screen and (min-width: 61em) {
+  /* line 153, ../sass/archive/_layout.scss */
+  footer[role=contentinfo] {
+    overflow: hidden;
+    *zoom: 1;
     display: block;
     float: left;
     margin-left: 0;
     margin-right: -100%;
-    width: 48.5%;
-  }
-  /* line 48, ../sass/content/_footer.scss */
-  .contentinfo small ul {
-    display: block;
-    float: left;
-    margin-left: 51.5%;
-    margin-right: -100%;
-    width: 48.5%;
-    margin-top: 0em;
+    width: 100%;
+    padding-top: 2.25em;
   }
 }
-@media screen and (min-width: 40em) {
-  /* line 56, ../sass/content/_footer.scss */
-  .contentinfo .contact {
+@media screen and (min-width: 61em) {
+  /* line 161, ../sass/archive/_layout.scss */
+  footer[role=contentinfo] .contact {
     display: block;
     float: left;
     margin-left: 61.8%;
     margin-right: -100%;
     width: 38.2%;
   }
-  /* line 59, ../sass/content/_footer.scss */
-  .contentinfo .colophon {
+}
+@media screen and (min-width: 61em) {
+  /* line 166, ../sass/archive/_layout.scss */
+  footer[role=contentinfo] .colophon {
     display: block;
     float: left;
     margin-left: 0;
     margin-right: -100%;
     width: 58.8%;
+    margin-bottom: 0.75em;
+  }
+}
+@media screen and (min-width: 81em) {
+  /* line 166, ../sass/archive/_layout.scss */
+  footer[role=contentinfo] .colophon {
+    display: block;
+    float: left;
+    margin-left: 0;
+    margin-right: -100%;
+    width: 48.5%;
+  }
+}
+/* line 175, ../sass/archive/_layout.scss */
+footer[role=contentinfo] small {
+  padding-top: 0.75em;
+  border-top: 1px solid #cacaca;
+  clear: both;
+  display: block;
+}
+@media screen and (min-width: 43em) {
+  /* line 181, ../sass/archive/_layout.scss */
+  footer[role=contentinfo] small p {
+    display: block;
+    float: left;
+    margin-left: 0;
+    margin-right: -100%;
+    width: 58.8%;
+  }
+  /* line 184, ../sass/archive/_layout.scss */
+  footer[role=contentinfo] small ul {
     clear: none;
-  }
-  /* line 64, ../sass/content/_footer.scss */
-  .contentinfo small p {
-    display: block;
-    float: left;
-    margin-left: 0;
-    margin-right: -100%;
-    width: 58.8%;
-  }
-  /* line 67, ../sass/content/_footer.scss */
-  .contentinfo small ul {
     display: block;
     float: left;
     margin-left: 61.8%;

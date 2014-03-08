@@ -1,46 +1,23 @@
 ---
 layout: default
 title: Blog
-lede: "This is my blog. It's mostly about web development. It's occasionally about Star Trek."
 ---
 
-<article role="main" class="archive">
-	<header>
-		<h1>
-			{{ page.title }}
-		</h1>
-	</header>
-	{% if page.standfirst %}
-	<p class="standfirst">
-		{{ page.standfirst }}
-	</p>
-	{% endif %}
-	{% if page.lede %}
-	<p class="lede">
-		{{ page.lede }}
-	</p>
-	{% endif %}
-	<div class="content">
-		{% for post in site.categories['blog'] %}
-		<section class="excerpt">
-			<header>
-				<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+<div role="main" class="archive main">
+	{% for post in site.categories['blog'] %}
+	<article class="excerpt">
+		<header>
+			<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+			<p class="meta">
 				<time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %d, %Y" }}</time>
-			</header>
-			<img src="http://cdn.jea.tt/img/post/thumb/{{ post.hero }}" alt="">
-			<div>
-				{% if post.standfirst %}
-				<p>
-					{{ post.standfirst }}
-				</p>
-				{% endif %}
-				{% if post.lede %}
-				<p>
-					{{ post.lede }}
-				</p>
-				{% endif %}
-			</div>
-		</section>
-		{% endfor %}
-	</div>
-</article>
+			</p>
+		</header>
+		<img src="http://cdn.jea.tt/img/post/{{ post.hero }}" alt="">
+		<div>
+			<p>
+				{{ post.summary }}
+			</p>
+		</div>
+	</article>
+	{% endfor %}
+</div> <!-- /.archive -->
