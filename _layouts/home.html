@@ -2,39 +2,40 @@
 layout: default
 ---
 
+{% for post in site.categories['blog'] limit:1 %}
 <article role="main" class="post">
 	<header>
 		<h1>
-			{{ page.title }}
+			{{ post.title }}
 		</h1>
 		<p class="meta">
-			Published on <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %d, %Y" }}</time>
+			Published on <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %d, %Y" }}</time>
 		</p>
-		{% if page.standfirst %}
+		{% if post.standfirst %}
 		<p class="standfirst">
-			{{ page.standfirst }}
+			{{ post.standfirst }}
 		</p>
 		{% endif %}
-		{% if page.lede %}
+		{% if post.lede %}
 		<p class="lede">
-			{{ page.lede }}
+			{{ post.lede }}
 		</p>
 		{% endif %}
 	</header>
-	{% if page.hero %}
-	<img class="hero" src="http://cdn.jea.tt/img/post/{{ page.hero }}" alt="">
+	{% if post.hero %}
+	<img class="hero" src="http://cdn.jea.tt/img/post/{{ post.hero }}" alt="">
 	{% endif %}
 	<div class="content">
-		{{ page.content | markdownify }}
+		{{ post.content | markdownify }}
 	</div> <!-- /.content -->
 	<footer>
 		<p class="share">
 			<i class="fa fa-twitter"></i> <a href="http://twitter.com/">Comment on Twitter</a>
 		</p>
-		{% if page.endnotes %}
+		{% if post.endnotes %}
 		<h2>Endnotes</h2>
 		<ol class="endnotes">
-			{% for item in page.endnotes %}
+			{% for item in post.endnotes %}
 			<li>{{ item }}</li>
 			{% endfor %}
 		</ol>
@@ -51,4 +52,5 @@ layout: default
 		</nav>
 	</aside>
 </article>
+{% endfor %}
 

@@ -2,12 +2,11 @@
 layout: default
 ---
 
-<article role="main" class="main">
+<article role="main" class="post">
 	<header>
 		<h1>
 			{{ page.title }}
 		</h1>
-	</header>
 	{% if page.standfirst %}
 	<p class="standfirst">
 		{{ page.standfirst }}
@@ -18,6 +17,7 @@ layout: default
 		{{ page.lede }}
 	</p>
 	{% endif %}
+	</header>
 	{% if page.hero %}
 	<img class="hero" src="http://cdn.jea.tt/img/work/{{ page.hero }}" alt="">
 	{% endif %}
@@ -25,23 +25,23 @@ layout: default
 		{{ page.content | markdownify }}
 	</div> <!-- /.content -->
 	<footer>
-		{% if page.responsibilities %}
-		<h2>What I did</h2>
-		<ul>
-			{% for item in page.responsibilities %}
+		{% if page.project_notes %}
+		<h2>Project notes</h2>
+		<ol>
+			{% for item in page.project_notes %}
 			<li>{{ item }}</li>
 			{% endfor %}
-		</ul>
+		</ol>
 		{% endif %}
 	</footer>
+	<aside>
+		<nav class="secondary">
+			<h2>Recent projects</h2>
+			<ul>
+				{% for post in site.categories['work'] %}
+				<li><a href="{{ post.url }}">{{ post.title | capitalize }}</a></li>
+				{% endfor %}
+			</ul>
+		</nav>
+	</aside>
 </article>
-<nav class="secondary">
-	<section>
-		<h2>Recent projects</h2>
-		<ul>
-			{% for post in site.categories['work'] %}
-			<li><a href="{{ post.url }}">{{ post.title | capitalize }}</a></li>
-			{% endfor %}
-		</ul>
-	</section>
-</nav>

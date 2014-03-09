@@ -5,13 +5,18 @@ categories: [work]
 summary: "Podongo are a market research company who I was privileged enough to see grow from a startup to a successful business."
 lede: "Podongo are a market research company who I was privileged enough to see grow from a startup to a successful business."
 hero: podengo-hero.jpg
+project_notes:
+  - Designed and with HTML5 and SASS
+  - Built on Perch
+  - Branding by Chris Vincent
 ---
 
 ## Background
 
 Fear is the true enemy, the only enemy. Shields up! Rrrrred alert! I'm afraid I still don't understand, sir. Could someone survive inside a transporter buffer for 75 years? Not if I weaken first. We could cause a diplomatic crisis. Take the ship into the Neutral Zone That might've been one of the shortest assignments in the history of Starfleet.
-Sure. You'd be surprised how far a hug goes with Geordi, or Worf. The unexpected is our normal routine. I suggest you drop it, Mr. Data. Well, that's certainly good to know. Some days you get the bear, and some days the bear gets you. Smooth as an android's bottom, eh, Data?
 ![Alt text](http://placekitten.com/1000/400 "A placeholder kitten")
+
+Sure. You'd be surprised how far a hug goes with Geordi, or Worf. The unexpected is our normal routine. I suggest you drop it, Mr. Data. Well, that's certainly good to know. Some days you get the bear, and some days the bear gets you. Smooth as an android's bottom, eh, Data?
 
 ## Research
 

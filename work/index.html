@@ -1,23 +1,4 @@
 ---
-layout: default
+layout: archive
 title: Work
 ---
-
-<div role="main" class="archive main">
-	{% for post in site.categories['work'] %}
-	<article class="excerpt">
-		<header>
-			<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-			<p class="meta">
-				<time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %d, %Y" }}</time>
-			</p>
-		</header>
-		<img src="http://cdn.jea.tt/img/work/{{ post.hero }}" alt="">
-		<div>
-			<p>
-				{{ post.summary }}
-			</p>
-		</div>
-	</article>
-	{% endfor %}
-</div> <!-- /.archive -->

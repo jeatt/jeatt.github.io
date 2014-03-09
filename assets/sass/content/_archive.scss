@@ -1,12 +1,11 @@
 .archive{
 	clear: both;
+	@include clearfix;
 	article{
 		@include margin-trailer(1);
-		header{
-			@include margin-trailer(.5);
-		}
 		img{
-			@include margin-trailer(.25);
+			@include margin-leader(.5);
+			@include margin-trailer(.5);
 		}
 		h2{
 			@include margin-leader(0);
@@ -15,10 +14,6 @@
 				border: none;
 			}
 		}
-	}
-	@media screen and (min-width: $bp-small){
-		@include clearfix;
-		@include padding-leader(2);
 	}
 	/* split into two columns */
 	@media screen and (min-width : $bp-tiny) and (max-width : $bp-bigger){
@@ -32,6 +27,10 @@
 				clear: right;
 			}
 		}
+	}
+	/* add some top padding when there is room */
+	@media screen and (min-width : $bp-small){
+		@include padding-leader(1);
 	}
 	/* split into three columns */
 	@media screen and (min-width : $bp-bigger){

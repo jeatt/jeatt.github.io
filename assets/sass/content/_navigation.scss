@@ -45,7 +45,7 @@ nav.primary{
 		@include adjust-leading-to(1);
 		@include gs-span(e,4,5);
 		@include margin-trailer(.5);
-		text-align: left;
+		text-align: center;
 		text-transform: capitalize;
 		ul{
 			@include margin-leader(0);
@@ -62,6 +62,9 @@ nav.secondary{
 	}
 	ul{
 		list-style: outside none;
+		li{
+			@include padding-trailer(.25);
+		}
 	}
 }
 
@@ -75,7 +78,7 @@ nav.secondary{
 	@include margin-trailer();
 }
 
-small ul{
+.smallprint ul{
 	li{
 		display: inline;
 		&:after{

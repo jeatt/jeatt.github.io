@@ -4,31 +4,36 @@
 	@include margin-trailer(1.5);
 	clear: both;
 	header{
+		@include clearfix;
 		@include margin-trailer(1);
-		text-align: center;
 		h1{
 			@include margin-trailer(0);
+			text-align: center;
+		}
+		.meta{
+			text-align: center;
 		}
 	}
-
 	.lede,
 	.standfirst{
 		@include adjust-font-size-to($base-font-size * 1.1);
 		@include adjust-leading-to(1);
-		@include margin-trailer(1);
+		@include margin-leader(1);
 		clear: both;
 	}
-
 	.hero{
 		@include gs-span(d,1,2);
 		@include margin-trailer(1);
 		clear: both;
 	}
-
 	.content{
 		clear: both;
+		@include margin-trailer;
+		img{
+			@include margin-leader(.5);
+			@include margin-trailer(.5);
+		}
 	}
-
 	footer{
 		h2{
 			@include adjust-font-size-to($base-font-size * 1.1);
@@ -36,48 +41,82 @@
 			padding-bottom: .1em;
 		}	
 		ol,
+		p,
 		ul{
 			@include adjust-font-size-to($base-font-size * .9);
 			@include adjust-leading-to(.9);
 		}
-	}
-	@media screen and (min-width : $bp-tiny){
-		@include margin-leader(3);
-	}
-	@media screen and (min-width : $bp-bigger){
-		@include gs-span(e,1,4);
-		header,
-		.content,
-		.lede,
-		.standfirst{
-			@include gs-span(e,2,4,(1,4));
-		}
-		header{
-			text-align: left;
-		}
-		footer{
-			@include gs-span(e,1,1,(1,4));
-		}
-	}
-	/* @media screen and (min-width : $bp-small){
-		header,
-		footer,
-		.content,
-		.lede,
-		.standfirst{
-			@include gs-span(e,2,5);
-			clear: both;
-		}
-		header{
-			text-align: left;
-			p{
-				&:after{
-					content: "";
-				}
-				&:before{
-					content: "";
-				}			
+		.share {
+			@include margin-trailer(1);
+			a{
+				border: none;
 			}
 		}
-	} */
+	}
+	/* left align header when logo/navigation switches to two columns */
+	@media screen and (min-width : $bp-small){
+		@include padding-leader(1);
+		header{
+			h1,
+			.meta{
+				text-align: left;
+			}
+		}
+	}
+	/* keep single column layout but constrain line-length */
+	@media screen and (min-width : $bp-small) and (max-width: $bp-big){
+		header{
+			@include gs-span(e,2,5);
+		}
+		.hero{
+			@include gs-span(e,1,5);
+		}
+		.content{
+			@include gs-span(e,2,5);
+			ul,
+			ol{
+				list-style-position: outside;
+			}
+		}
+		footer{
+			@include gs-span(e,2,4);
+			clear: both;
+		}
+		aside{
+			@include gs-span(e,2,4);
+			clear: both;
+		}
+	}
+	/* switch to multi-column layout */
+	@media screen and (min-width : $bp-big){
+		header{
+			@include gs-span(e,2,4);
+			@include gs-pad(e,padinfull);
+		}
+		.hero{
+			@include gs-span(e,1,4);
+		}
+		.content{
+			@include gs-span(e,2,4);
+			@include gs-pad(e,padinfull);
+			ul,
+			ol{
+				list-style-position: outside;
+			}
+		}
+		footer{
+			@include gs-span(e,1,1);
+			@include margin-leader(3);
+			h2{
+				@include margin-leader(0);
+			}
+		}
+		aside{
+			@include gs-span(e,5,5);
+			@include margin-leader(3);
+			h2{
+				@include margin-leader(0);
+			}
+		}
+	}
 }

@@ -14,7 +14,7 @@ The playlist is available on [Spotify](http://open.spotify.com/user/tomjeatt/pla
 
 ## *Det Er Mig Der Holder* Træerne Sammen by Under Byen
 
-For the first 20 seconds you feel like this is a song which should have been left in 2002 with the rest of the Portishead clones. Then the voice comes in. Then the horns come in. Then all is forgiven. [Listen on Spotify](http://google.com) | [Listen on Rdio](http://google.com)
+For the first 20 seconds this sounds like a song which should have been left in 2002 with the rest of the Portishead clones. Then the voice comes in. Then the horns come in. Then all is forgiven. [Listen on Spotify](http://google.com) | [Listen on Rdio](http://google.com)
 
 ## *10 Rokkstig* by Jóhann Jóhannsson
 

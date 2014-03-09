@@ -14,12 +14,13 @@
 @import "mixins";
 @import "breakpoints";
 
-/* typography */
+/* content elements */
 
 @import "typography/global";
 @import "typography/defaults/code";
 @import "typography/defaults/headings";
 @import "typography/defaults/icons";
+@import "typography/defaults/images";
 @import "typography/defaults/links";
 @import "typography/defaults/lists";
 @import "typography/defaults/paragraphs";

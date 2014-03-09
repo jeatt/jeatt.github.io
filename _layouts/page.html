@@ -2,12 +2,11 @@
 layout: default
 ---
 
-<article role="main" class="page">
+<article role="main" class="page home">
 	<header>
 		<h1>
 			{{ page.title }}
 		</h1>
-	</header>
 	{% if page.standfirst %}
 	<p class="standfirst">
 		{{ page.standfirst }}
@@ -17,6 +16,7 @@ layout: default
 	<p class="lede">
 		{{ page.lede }}
 	</p>
+	</header>
 	{% endif %}
 	{% if page.hero %}
 	<img class="hero" src="{{ page.hero }}" alt="">
@@ -24,14 +24,4 @@ layout: default
 	<div class="content">
 		{{ page.content | markdownify }}
 	</div> <!-- /.content -->
-	<footer>
-		{% if page.responsibilities %}
-		<h2>What I did</h2>
-		<ul>
-			{% for item in page.responsibilities %}
-			<li>{{ item }}</li>
-			{% endfor %}
-		</ul>
-		{% endif %}
-	</footer>
 </article>
