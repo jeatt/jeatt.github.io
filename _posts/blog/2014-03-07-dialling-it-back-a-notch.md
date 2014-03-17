@@ -15,4 +15,4 @@ Another example: *Here Comes the Flood* by Peter Gabriel, about which a friend o
 
 ## Sometimes design is taking things away
 
-Often it's the job of a designer to take things away. It's also the job of the designer to finish writing articles before posting them online.
+Often it's the job of a designer to take things away. It's also the job of the designer to finish writing articles before posting them online, but this is just here for testing. The finished version will go live with the rest of the site though.
