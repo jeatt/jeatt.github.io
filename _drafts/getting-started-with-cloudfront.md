@@ -1,31 +1,29 @@
 ---
 layout: post
-title: "Getting started with Cloudfront"
+title: "Getting started with Cloudfront and S3"
 categories:
 - blog
-summary: "he subject of what should, and shouldn't, go into version control is a contentious one. My opinion is that only images which are part of the site structure&#8212;logos, icons etc.&#8212;should go into the repository."
-standfirst: "The subject of what should, and shouldn't, go into version control is a contentious one. My opinion is that only images which are part of the site structure&#8212;logos, icons etc.&#8212;should go into the repository. User uploaded content shouldn't. Because this website is hosted on Github and I wanted to keep my repository clean, I had to find somewhere else to put the images. I decided to go with Amazon S3 and Cloudfront. Setting it up was a horrible time for me."
+summary: "Cloudfront, Amazon's CDN, allows you to do some amazingly complex things. The documentation reflects that. I wanted to do something really simple and sifting through thousands of words trying to find the ones which were relevant to me was a deeply unpleasant way to spend a Saturday."
+standfirst: "Cloudfront, Amazon's CDN, allows you to do some amazingly complex things. The documentation reflects that. I wanted to do something really simple and sifting through thousands of words trying to find the ones which were relevant to me was a deeply unpleasant way to spend a Saturday. I've written up this short guide to spare you the pain that I went through."
 hero: clouds.jpg
 endnotes:
 - "The image on this page is of nacreous clouds over Nasa's McMurdo Station in Antarctica (sourced from <a href='http://commons.wikimedia.org/wiki/File:Nacreous_clouds_Antarctica.jpg'>Wikimedia Commons</a>)"
 # Lede is the first paragraph of an article. Standfirst is a summary. #
 ---
 
-
-
-Configuring Cloudfront was a frustrating, harrowing, experience. It allows you to do some amazingly complex things and the documentation reflects that. I wanted to do something really simple and sifting through thousands of words trying to find the ones which were relevant to me was a deeply unpleasant way to spend a Saturday.
-
 ## What are S3 and Cloudfront?
 
-S3 and Cloudfront are both part of Amazon Web Services (AWS). S3, which stands for Simple Storage Service, is a cloud storage service; Cloudfront is a content delivery network. When used together they allow you to create an efficient and potentially very cheap content delivery network (CDN). Access is metred and there is no subscription charge, so the price you pay depends on how much data you send and receivd over Amazon's network. 
+S3 and Cloudfront are both part of [Amazon Web Services](http://aws.amazon.com/) (AWS). S3, which stands for [Simple Storage Service](http://aws.amazon.com/s3/), is a cloud storage service; [Cloudfront](http://aws.amazon.com/cloudfront/) is a content delivery network. When used together they allow you to create an efficient and potentially very cheap content delivery network (CDN). Access is metered and there is no subscription charge, so the price you pay depends on how much data you send and receive over Amazon's network. 
 
 ## What was I trying to do with it?
 
-Not having an answer to this question is where things started to go wrong for me. I didn't really know what I was trying to do which left me stumbling around the web hoovering up mismatched pieces of information like a drunken uncle at a wedding buffet. In much the same way as he only really needs a sandwich, a small handful of crisps, a glass of water and a nap, there were only four things I really needed to do.
+All that I was trying to create a CDN to serve image files to my website. Because my website is hosted on Github, I didn't want images littering my repository.
 
-1. Create a directory (a bucket in Amazon terminology) to hold my image files. 
-2. Create a Cloudfront distribution to serve the image files.
-3. Specify a URL for my CDN and add a matching CNAME entry to my DNS records.
+Not having an answer to this question is where things started to go wrong for me. I didn't really know what I was trying to do which left me stumbling around the web hoovering up mismatched pieces of information like a drunk guest at a wedding buffet. In much the same way as all the guest really needs is a sandwich, a handful of crisps, and so there were only three things that I really needed:
+
+1. A directory (a bucket in Amazon terminology) to hold my image files. 
+2. A Cloudfront distribution to serve the image files.
+3. A URL for my CDN and add a matching CNAME entry to my DNS records.
 4. Prevent the files from being accessed at their original location.
 
 ## Create an account with Amazon Web Services
@@ -62,11 +60,19 @@ That's it for S3.
 
 ### Origin Access Identity
 
-## Have some patience
+## Cache busting
+
+## Patience
 
 ## Alternatives
 
+There are a few other ways to get a CDN up and running.
+
 ### Fastly
 
-This looks great. Nice website, nice interface. One-click integration with DNSimple. Minimum charge of $50 a month. Bit too rich for my blood.
+This looks great. Nice website, nice interface. One-click integration with DNSimple. And a Minimum charge of $50 a month. A good-looking service, but a bit too pricey for my needs.
+
+### MaxCDN
+
+
 

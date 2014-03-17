@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+	<!-- metadata -->
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta name="author" content="Thomas Jeatt"/>
 	<meta name="robots" content="index, follow"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>{% if page.title != "Home" %}{{ page.title }} | {% endif %}{{ site.name }} | Web design and development from Reading, England</title>
+	<!-- fonts -->
 	<script type="text/javascript">
 		WebFontConfig = { fontdeck: { id: '41877' } };
-
 		(function() {
 			var wf = document.createElement('script');
 			wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
@@ -18,9 +20,14 @@
 			s.parentNode.insertBefore(wf, s);
 		})();
 	</script>
-	<script src="/assets/js/modernizr.uncompressed.js"></script>
+	<!-- browser dependencies -->
+	<script src="/assets/js/modernizr.js"></script>
+    <!-- style -->
 	<link rel="stylesheet" href="/assets/css/jeatt.css?ver=10">
-	<title>{% if page.title != "Home" %}{{ page.title }} | {% endif %}{{ site.name }} | Web design and development from Reading, England</title>
+	<!-- compatibility -->
+	<!--[if lt IE 9]>
+    	<link rel="stylesheet" href="/assets/css/compatibility.css">
+    <![endif]-->
 </head>
 <body {% if page.title == "Home" %}class="home"{% endif %}>
 	<div class="wrap">
@@ -46,6 +53,7 @@
 					<ul>
 						<li><i class="fa fa-pencil fa-fw"></i> write to <a href="mailto:thomas@jea.tt">thomas@jea.tt</a></li>
 						<li><i class="fa fa-twitter fa-fw"></i> tweet <a href="http://twitter.com/jea_tt">@jea_tt</a></li>
+						<li><i class="fa fa-phone fa-fw"></i> call +44 (0)7708 178 043</li>
 					</ul>
 				</div>
 				<div>
@@ -71,12 +79,24 @@
 					<li><a href="/about/faqs.html">FAQs</a></li>
 				</ul>
 				<p>
-					<small>Licenced under <a rel="license" href="#">creative commons</a></small>
+					<small>Licenced under <a rel="license" href="/about/creativecommons.html">creative commons</a>.</small>
 				</p>
 			</section> <!-- /.smallprint -->
 		</footer>
 	</div> <!-- .wrap -->
 	<script src="/assets/js/gridset-overlay.js"></script>
+	<script>
+		var gaProperty = 'UA-48138204-1';
+		var disableStr = 'ga-disable-' + gaProperty;
+		if (document.cookie.indexOf(disableStr + '=true') > -1) {
+		  window[disableStr] = true;
+		}
+
+		function gaOptout() {
+		  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+		  window[disableStr] = true;
+		}
+	</script>
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

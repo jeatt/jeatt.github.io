@@ -1,5 +1,5 @@
 ---
 layout: page
 title: Accessibility
-standfirst: "This is where my accessibility statement will be, along with the accessibility testing spreadsheet."
+standfirst: "I'm still in testing mode. Once that's done there'll be an accessibility statement here."
 ---

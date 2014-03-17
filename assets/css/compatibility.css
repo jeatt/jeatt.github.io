@@ -1,0 +1,11 @@
+/*
+ * compatibility overrides 
+ *
+ */
+/* less than ie9 */
+/* single column layout for older browsers */
+/* line 3, ../sass/compatibility/_ltie9.scss */
+.wrap {
+  margin: 0 auto;
+  width: 60%;
+}

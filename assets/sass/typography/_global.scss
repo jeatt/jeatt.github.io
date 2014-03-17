@@ -14,3 +14,13 @@ body{
 	@include primary_typeface;
 	color: $font_color;
 }
+
+b,
+strong{
+	@include primary_typeface_bold;
+}
+
+em,
+i{
+	@include primary_typeface_italic;
+}

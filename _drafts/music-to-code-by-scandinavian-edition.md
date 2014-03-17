@@ -2,7 +2,7 @@
 layout: post
 categories:
 - blog
-title: "Music to Code by: Scandinavia"
+title: "Music to code by: Scandinavia"
 summary: "A lot of my favourite music is Scandinavian and one of my biggest regrets in life is not going to see A-Ha's farewell tour in 2011. This is a playlist of Scandinavian music I like to listen to when I'm working."
 standfirst: "A lot of my favourite music is Scandinavian and one of my biggest regrets in life is not going to see A-Ha's farewell tour in 2011. This is a playlist of Scandinavian music I like to listen to when I'm working. Sadly there was no place for A-Ha."
 hero: scandinavia.jpg

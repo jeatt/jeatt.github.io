@@ -478,9 +478,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .fa-trophy:before { content: $fa-var-trophy; }
 .fa-github-square:before { content: $fa-var-github-square; }
 .fa-upload:before { content: $fa-var-upload; }
-.fa-lemon-o:before { content: $fa-var-lemon-o; }
-.fa-phone:before { content: $fa-var-phone; }
-.fa-square-o:before { content: $fa-var-square-o; }
+.fa-lemon-o:before { content: $fa-var-lemon-o; }*/
+/* line 153, ../sass/vendors/font-awesome/_icons.scss */
+.fa-phone:before {
+  content: "\f095";
+}
+
+/*.fa-square-o:before { content: $fa-var-square-o; }
 .fa-bookmark-o:before { content: $fa-var-bookmark-o; }
 .fa-phone-square:before { content: $fa-var-phone-square; } */
 /* line 157, ../sass/vendors/font-awesome/_icons.scss */
@@ -794,6 +798,24 @@ body {
   color: #2b2b2b;
 }
 
+/* line 19, ../sass/typography/_global.scss */
+b,
+strong {
+  font-family: "Enigma Bold", Georgia, 'Times New Roman', Times, serif;
+  font-size-adjust: 0.45;
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* line 24, ../sass/typography/_global.scss */
+em,
+i {
+  font-family: "Enigma Italic", Georgia, 'Times New Roman', Times, serif;
+  font-size-adjust: 0.46;
+  font-weight: normal;
+  font-style: italic;
+}
+
 /* line 6, ../sass/typography/defaults/_headings.scss */
 h1,
 h2,
@@ -819,7 +841,7 @@ h1 {
 h2 {
   font-size: 1.4em;
   line-height: 2.14286em;
-  line-height: 1.065em;
+  line-height: 1.2em;
   margin-top: 1.125em;
   margin-bottom: 0.375em;
 }
@@ -881,7 +903,7 @@ ol {
 
 /* line 7, ../sass/typography/defaults/_lists.scss */
 ul {
-  list-style: inside square;
+  list-style: inside disc;
 }
 
 /* line 11, ../sass/typography/defaults/_lists.scss */
@@ -890,26 +912,9 @@ ol {
 }
 
 /* indent all paragraphs in main content area except for the first one and any which immediately follow headings */
-/* line 3, ../sass/typography/defaults/_paragraphs.scss */
-.content {
-  /* remove indent for parapgraphs which follow headings */
-}
 /* line 4, ../sass/typography/defaults/_paragraphs.scss */
 .content p {
   text-indent: 1em;
-}
-/* line 6, ../sass/typography/defaults/_paragraphs.scss */
-.content p:first-of-type {
-  text-indent: 0;
-}
-/* line 16, ../sass/typography/defaults/_paragraphs.scss */
-.content h1 + p,
-.content h2 + p,
-.content h3 + p,
-.content h4 + p,
-.content h5 + p,
-.content h6 + p {
-  text-indent: 0;
 }
 
 /* content */
@@ -1142,7 +1147,7 @@ nav.secondary ul li {
 .page .standfirst {
   font-size: 1.1em;
   line-height: 1.36364em;
-  line-height: 1.5em;
+  line-height: 1.65em;
   margin-top: 1.5em;
   clear: both;
 }
@@ -1189,11 +1194,16 @@ nav.secondary ul li {
   line-height: 1.35em;
 }
 /* line 49, ../sass/content/_page.scss */
+.post footer li,
+.page footer li {
+  margin-bottom: 0.375em;
+}
+/* line 52, ../sass/content/_page.scss */
 .post footer .share,
 .page footer .share {
   margin-bottom: 1.5em;
 }
-/* line 51, ../sass/content/_page.scss */
+/* line 54, ../sass/content/_page.scss */
 .post footer .share a,
 .page footer .share a {
   border: none;
@@ -1204,7 +1214,7 @@ nav.secondary ul li {
   .page {
     padding-top: 1.5em;
   }
-  /* line 61, ../sass/content/_page.scss */
+  /* line 64, ../sass/content/_page.scss */
   .post header h1,
   .post header .meta,
   .page header h1,
@@ -1213,7 +1223,7 @@ nav.secondary ul li {
   }
 }
 @media screen and (min-width: 40em) and (max-width: 60em) {
-  /* line 68, ../sass/content/_page.scss */
+  /* line 71, ../sass/content/_page.scss */
   .post header,
   .page header {
     display: block;
@@ -1222,7 +1232,7 @@ nav.secondary ul li {
     margin-right: -100%;
     width: 79.4%;
   }
-  /* line 71, ../sass/content/_page.scss */
+  /* line 74, ../sass/content/_page.scss */
   .post .hero,
   .page .hero {
     display: block;
@@ -1231,7 +1241,7 @@ nav.secondary ul li {
     margin-right: -100%;
     width: 100%;
   }
-  /* line 74, ../sass/content/_page.scss */
+  /* line 77, ../sass/content/_page.scss */
   .post .content,
   .page .content {
     display: block;
@@ -1240,14 +1250,14 @@ nav.secondary ul li {
     margin-right: -100%;
     width: 79.4%;
   }
-  /* line 77, ../sass/content/_page.scss */
+  /* line 80, ../sass/content/_page.scss */
   .post .content ul,
   .post .content ol,
   .page .content ul,
   .page .content ol {
     list-style-position: outside;
   }
-  /* line 81, ../sass/content/_page.scss */
+  /* line 84, ../sass/content/_page.scss */
   .post footer,
   .page footer {
     display: block;
@@ -1257,7 +1267,7 @@ nav.secondary ul li {
     width: 58.8%;
     clear: both;
   }
-  /* line 85, ../sass/content/_page.scss */
+  /* line 88, ../sass/content/_page.scss */
   .post aside,
   .page aside {
     display: block;
@@ -1269,7 +1279,7 @@ nav.secondary ul li {
   }
 }
 @media screen and (min-width: 60em) {
-  /* line 92, ../sass/content/_page.scss */
+  /* line 95, ../sass/content/_page.scss */
   .post header,
   .page header {
     display: block;
@@ -1283,7 +1293,7 @@ nav.secondary ul li {
     padding-left: 3%;
     padding-right: 3%;
   }
-  /* line 96, ../sass/content/_page.scss */
+  /* line 99, ../sass/content/_page.scss */
   .post .hero,
   .page .hero {
     display: block;
@@ -1292,7 +1302,7 @@ nav.secondary ul li {
     margin-right: -100%;
     width: 79.4%;
   }
-  /* line 99, ../sass/content/_page.scss */
+  /* line 102, ../sass/content/_page.scss */
   .post .content,
   .page .content {
     display: block;
@@ -1306,14 +1316,14 @@ nav.secondary ul li {
     padding-left: 3%;
     padding-right: 3%;
   }
-  /* line 103, ../sass/content/_page.scss */
+  /* line 106, ../sass/content/_page.scss */
   .post .content ul,
   .post .content ol,
   .page .content ul,
   .page .content ol {
     list-style-position: outside;
   }
-  /* line 107, ../sass/content/_page.scss */
+  /* line 110, ../sass/content/_page.scss */
   .post footer,
   .page footer {
     display: block;
@@ -1323,12 +1333,12 @@ nav.secondary ul li {
     width: 17.6%;
     margin-top: 4.5em;
   }
-  /* line 110, ../sass/content/_page.scss */
+  /* line 113, ../sass/content/_page.scss */
   .post footer h2,
   .page footer h2 {
     margin-top: 0em;
   }
-  /* line 114, ../sass/content/_page.scss */
+  /* line 117, ../sass/content/_page.scss */
   .post aside,
   .page aside {
     display: block;
@@ -1338,7 +1348,7 @@ nav.secondary ul li {
     width: 17.6%;
     margin-top: 4.5em;
   }
-  /* line 117, ../sass/content/_page.scss */
+  /* line 120, ../sass/content/_page.scss */
   .post aside h2,
   .page aside h2 {
     margin-top: 0em;

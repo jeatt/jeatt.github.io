@@ -2,26 +2,27 @@
 layout: default
 ---
 
-<article role="main" class="page home">
+<article role="main" class="page">
 	<header>
 		<h1>
 			{{ page.title }}
 		</h1>
-	{% if page.standfirst %}
-	<p class="standfirst">
-		{{ page.standfirst }}
-	</p>
-	{% endif %}
-	{% if page.lede %}
-	<p class="lede">
-		{{ page.lede }}
-	</p>
+		{% if page.standfirst %}
+		<p class="standfirst">
+			{{ page.standfirst }}
+		</p>
+		{% endif %}
+		{% if page.lede %}
+		<p class="lede">
+			{{ page.lede }}
+		</p>
+		{% endif %}
 	</header>
-	{% endif %}
 	{% if page.hero %}
-	<img class="hero" src="{{ page.hero }}" alt="">
+	<img class="hero" src="http://cdn.jea.tt/img/page/{{ page.hero }}" alt="">
 	{% endif %}
 	<div class="content">
 		{{ page.content | markdownify }}
 	</div> <!-- /.content -->
 </article>
+

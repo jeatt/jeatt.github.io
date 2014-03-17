@@ -11,10 +11,18 @@ layout: default
 			<p class="meta">
 				<time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %d, %Y" }}</time>
 			</p>
-			<img src="http://cdn.jea.tt/img/post/{{ post.hero }}" alt="">
+			<img src="http://cdn.jea.tt/img/post/thumb/{{ post.hero }}" alt="">
 		</header>
 		<p>
-			{{ post.summary }}
+			{% if post.summary %}
+			{{ post.summary }}<br />
+			{% else %}
+			{% if post.lede %}
+			{{ post.lede }}<br />
+			{% elsif post.standfirst %}
+			{{ post.standfirst }}
+			{% endif %}
+			{% endif %}
 		</p>
 	</article>
 	{% endfor %}
@@ -22,13 +30,21 @@ layout: default
 	<!-- pull in work posts if this is the work index - there must be a more graceful way to do this --> 
 	{% if page.title == 'Work' %}
 	{% for post in site.categories['work'] %}
-	<article class="excerpt">
+	<article class="excerpt project">
 		<header>
 			<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 		</header>
-		<img src="http://cdn.jea.tt/img/work/{{ post.hero }}" alt="">
+		<img src="http://cdn.jea.tt/img/work/thumb/{{ post.hero }}" alt="">
 		<p>
-			{{ post.summary }}
+			{% if post.summary %}
+			{{ post.summary }}<br />
+			{% else %}
+			{% if post.lede %}
+			{{ post.lede }}<br />
+			{% elsif post.standfirst %}
+			{{ post.standfirst }}
+			{% endif %}
+			{% endif %}
 		</p>
 	</article>
 	{% endfor %}
