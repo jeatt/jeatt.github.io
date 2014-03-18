@@ -3,18 +3,11 @@ layout: post
 categories:
 - blog
 title: "Music to code by: Scandinavia"
-summary: "A lot of my favourite music is Scandinavian and one of my biggest regrets in life is not going to see A-Ha's farewell tour in 2011. This is a playlist of Scandinavian music I like to listen to when I'm working."
-standfirst: "A lot of my favourite music is Scandinavian and one of my biggest regrets in life is not going to see A-Ha's farewell tour in 2011. This is a playlist of Scandinavian music I like to listen to when I'm working. Sadly there was no place for A-Ha."
+standfirst: "A lot of my favourite music is Scandinavian and one of my biggest regrets in life is not going to see A-Ha's farewell tour in 2011. This is a playlist of Scandinavian music I like to listen to when I'm working. Sadly there's no place for A-Ha."
 hero: scandinavia.jpg
 endnotes:
 - "The photograph on this page is a detail from an aerial photograph of the Scandinavian peninusla (sourced from <a href='http://upload.wikimedia.org/wikipedia/commons/f/f1/Scandinavia_M2002074_lrg.jpg'>Wikimedia Commons</a>)"
 ---
-
-The playlist is available on [Spotify](http://open.spotify.com/user/tomjeatt/playlist/4JGdNBBsONWIUFFS1rev22) and [Rdio](http://rd.io/x/QX_ZvTMkrAs/).
-
-## *Det Er Mig Der Holder* Træerne Sammen by Under Byen
-
-For the first 20 seconds this sounds like a song which should have been left in 2002 with the rest of the Portishead clones. Then the voice comes in. Then the horns come in. Then all is forgiven. [Listen on Spotify](http://google.com) | [Listen on Rdio](http://google.com)
 
 ## *10 Rokkstig* by Jóhann Jóhannsson
 
@@ -43,13 +36,3 @@ This was the hardest one to pick. The album this is from, *Piramida*, is one of 
 ## *End Theme* by Jóhann Jóhannsson
 
 This is a wonderful piece of music to listen to while leaning back in your chair and drinking a hot cup of coffee, letting your subconscious nibble away at the edges of that tricky problem that you can't quite solve. [Listen on Spotify](http://google.com) | [Listen on Rdio](http://google.com)
-
-## *Am I Wry, No?* by Mew
-
-Ok I lied, and actually I cheated as well. This isn't a good song to code to at all. But it's a brilliant song to help you get your head out of the code and back into the real world. Case in point: I just gave this playlist a run through while I was working, and coding became air guitar which became air drums which became air guitar which became air drums which became air strings and so on and so forth until the end of the song when it became air piano. I've done enough work for today anyway. [Listen on Spotify](http://google.com) | [Listen on Rdio](http://google.com)
-
-## Bonus Estonian
-
-### *Cantus in memoriam Benjamin Britten* by Arvo Part
-
-Originally this playlist contained a piece of music by the well known Finnish composer Arvo Part who on closer inspection turned out to be Estonian. If you don't mind an Estonian interloper, this composition slots in just after *End Theme*. 
