@@ -3,15 +3,11 @@ layout: project
 title: Podengo
 categories:
 - work
-lede: "I designed and built a website for Podengo, a market research recruitment company who connect consumers to customers for qualitative research projetcs."
+lede: "I designed and built a website for Podengo, a market research recruitment company who connect consumers to customers for qualitative research projects."
 hero: podengo-hero_v2.jpg
-project_notes:
-  - Designed and with HTML5 and SASS
-  - Built on Perch
-  - Branding by Chris Vincent
 ---
 
-Sure. You'd be surprised how far a hug goes with Geordi, or Worf. The unexpected is our normal routine. I suggest you drop it, Mr. Data. Well, that's certainly good to know. Some days you get the bear, and some days the bear gets you. Smooth as an android's bottom, eh, Data?
+Gemma Stokes, Podengo's founder, first got in touch with me a few weeks before she officially launched her company. She had already had a website mocked-up by a graphic designer
 ![Podengo sign up form](http://cdn.jea.tt/img/work/podengo-form-detail_v2.jpg)
 
 ## Research

@@ -36,7 +36,7 @@ The focus of marketing campaigns is often individual journals, so the marketers 
 
 The majority of marketing campaigns are designed to direct users to Taylor &amp; Francis Online, which hosts all of our online content. Explore Taylor &amp; Francis Online needed to look similar but it also had to improve on the overall user experience. I decided to keep certain design elements&#8212;the colour scheme, the logo, and a distinctive background gradient&#8212;but improve the typography and create a responsive layout to make better use of the available space and make sure that the pages would work on mobile devices. The end result was a website which had was identifiably part of the same company, but with an improved user experience.
 
-Unusually for a website, Explore Taylor &amp; Francis Online doesn't have a home page or a main navigation; the campaign pages are designed to be promoted individually.
+Because the campaign pages are designed to be promoted individually the site doesn't have a home page or a main navigation, although it was designed with expansion in mind so a home page and top level team or subject pages can be created and made navigable if this ever becomes a requirement. 
 
 The site was also designed to be used for our other imprints if necessary. A sister site has already been launched for Cogent OA, our Open Access imprint.
 ![Cogent OA](http://cdn.jea.tt/img/work/explore-cogentoa-detail.jpg)
