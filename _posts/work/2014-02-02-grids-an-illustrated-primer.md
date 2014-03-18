@@ -4,7 +4,7 @@ title: "Grids: An Illustrated Primer"
 categories:
 - work
 lede: "Grids: An Illustrated Primer is a website I put together as part of my university studies. It's less a website and more an illustrated essay."
-hero: grids-hero_v2.jpg
+hero: grids-hero_v3.jpg
 ---
 
 The brief for this project was very simple: we were asked to write an essay about grids in web design using case studies to support our arguments. The details were left entirely up to us.
