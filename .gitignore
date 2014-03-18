@@ -1,5 +1,6 @@
-assets/compass_app_log.txt
 assets/.sass-cache
+assets/compass_app_log.txt
+assets/img
 _site
 *.sublime-project
 *.sublime-workspace
