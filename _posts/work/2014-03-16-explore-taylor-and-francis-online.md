@@ -23,14 +23,14 @@ The challenge was coming up with a system which flexible enough to let them do t
 
 During the research stage of the project I had noticed that most campaigns were made up of a small number of self-contained content types, such as article lists or conference announcements. Instead of giving users a way to create individual pages I used ExpressionEngine to create a content management system which keeps the content and the pages separate.
 
-The marketers can create the content they need for each campaign, and then drag and drop it onto the campaign pages in any combination and in whatever order they want. Content can be reused and shared across multiple pages, which is something which is used extensively for social media profiles and shared promotions.
+The marketers can create the content they need for each campaign, and then drag and drop it onto the campaign pages in any combination and in whatever order they want. Content can be reused and shared across multiple pages, which is something which is used extensively for social media profiles and shared promotions. Although the majority of pages are standalone campaigns, it is also very easy for marketers to create linked multi-page campaigns.
 
 Because the layout of each content type is the same on every page, each campaign looks consistent, and applying universal updates is easily achieved. The site has already had one significant update to its layout, and this was done without affecting existing content. Because of the modular way in which the content management system is set up, new content types can be created as and when they are needed with only minor changes having to be made to the page templates.
 
+## Integration
+
 The focus of marketing campaigns is often individual journals, so the marketers needed a way to associate a campaign page with a particular journal. Rather than adding this information to the site manually this is pulled into the site from our existing journals database. This makes adding journal information to a campaign page as simple as choosing it from a drop-down list. Design elements such as boxouts and journal images are then automatically added to the appropriate place on the campaign page, and the information about each journal is always up-to-date.
 ![Call for papers](http://cdn.jea.tt/img/work/explore-cfp.jpg)
-
-Although the majority of pages are standalone campaigns, it is also very easy for marketers to create linked multi-page campaigns.
 
 ## Keeping it in the family
 
