@@ -1,0 +1,9 @@
+blockquote{
+	@include primary_typeface_italic;
+	@include margin-leader(.5);
+	@include margin-trailer(.5);
+	@include gs-pad(e,padinfull);
+	p{
+		text-indent: 0;
+	}
+}
