@@ -3,7 +3,7 @@ layout: post
 categories:
 - blog
 title: "Music to code by: Scandinavian edition"
-standfirst: "A lot of my favourite music is Scandinavian, although I'm not sure why. Maybe the climate produces musicians who make the kind of music I like. This is a playlist of Scandinavian music listen to when I'm working. The playlist is on both <a href='http://rd.io/x/QX_ZvTMkrAs/'>Rdio</a> and <a href='http://open.spotify.com/user/tomjeatt/playlist/4JGdNBBsONWIUFFS1rev22'>Spotify</a>."
+standfirst: "A lot of my favourite music is Scandinavian, although I'm not sure why. Maybe the climate produces musicians who make the kind of music I like. This is a playlist of Scandinavian music I listen to when I'm working. The playlist is on both <a href='http://rd.io/x/QX_ZvTMkrAs/'>Rdio</a> and <a href='http://open.spotify.com/user/tomjeatt/playlist/4JGdNBBsONWIUFFS1rev22'>Spotify</a>."
 hero: scandinavia.jpg
 endnotes:
 - "The photograph on this page is a detail from an aerial photograph of the Scandinavian peninusla (sourced from <a href='http://upload.wikimedia.org/wikipedia/commons/f/f1/Scandinavia_M2002074_lrg.jpg'>Wikimedia Commons</a>)"
