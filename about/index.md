@@ -13,14 +13,6 @@ There's not much point in having a lovely new website if you don't know how to u
 
 I [write about design and development](/blog) so if you're interested in getting an idea of how I like to go about things then that would be a good place to start.
 
-## What I don't do
-
-I don't convert existing designs into websites. Design and development go hand-in-hand and I'm not comfortable working on a website if I'm not allowed to have a say in what it looks like. If you already have a designer or design team then I'm very happy to work in collaboration with them.
-
-I don't provide hosting services, register domain names or set up email addresses but if you need a hand with that then I can point you in the right direction.
-
-I don't add or update content to a website after it's been launched. Every website I build has a content management system so that you can do that yourself. If you decide you'd like your website to look a bit different or do something new further down the line, then I'm always happy to revisit an old friend. 
-
 ## Background
 
 Like a lot of web designers I arrived here by taking the long way round, learning to code in my spare time while working as a bar manager, a media researcher, in local government and as a hi-tech music specialist. I found myself at Taylor &amp; Francis just as the academic world was starting to move online, and from there I managed turn a job which involved a small bit of web design into one which involves nothing else. 
