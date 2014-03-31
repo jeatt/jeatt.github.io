@@ -20,7 +20,7 @@ PiL's first album is one of the finest post-punk/new wave albums ever made. Alph
 
 ## *Konami (Dreamtrak Diamond Sound)* by Apparat Organ Quartet
 
-Apparat Organ Quartet (formed by by Jóhann Jóhannsson who's cropping up all over this playlist) are more of a musical collective than a band. Mostly their music is tooth-rattling although every now and then it can be head soothing; this remix is kind of in-between. For the first few seconds it sounds alarmlingly like the start of Whitney Houston's *I wanna Dance with Somebody*, before morphing into something which sounds ike an 80s version of Daft Punk mixed up with a little bit of [the theme from *The Clothes Show*](https://www.youtube.com/watch?v=kAAelPf62Xs). When I'm listening to this song I get twice as much work done. <i class="fa fa-headphones"></i> [Rdio](http://rd.io/x/QX_ZvTew4wk/) or [Spotify](http://open.spotify.com/track/0T3QgfqKgqgGIxlz1qJTM1).
+Apparat Organ Quartet (formed by by Jóhann Jóhannsson who's cropping up all over this playlist) are more of a musical collective than a band. Mostly their music is tooth-rattling although every now and then it can be head soothing; this remix is kind of in-between. For the first few seconds it sounds alarmingly like the start of Whitney Houston's *I wanna Dance with Somebody*, before morphing into something which sounds ike an 80s version of Daft Punk mixed up with a little bit of [the theme from *The Clothes Show*](https://www.youtube.com/watch?v=kAAelPf62Xs). When I'm listening to this song I get twice as much work done. <i class="fa fa-headphones"></i> [Rdio](http://rd.io/x/QX_ZvTew4wk/) or [Spotify](http://open.spotify.com/track/0T3QgfqKgqgGIxlz1qJTM1).
 
 ## *Cervux Sequential* by Apparatjik]
 
