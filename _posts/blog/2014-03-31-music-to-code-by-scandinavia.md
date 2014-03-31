@@ -2,7 +2,7 @@
 layout: post
 categories:
 - blog
-title: "Music to code by: Scandinavian edition"
+title: "Music to code by: Scandinavia"
 standfirst: "A lot of my favourite music is Scandinavian, although I'm not sure why. Maybe the climate produces musicians who make the kind of music I like. This is a playlist of Scandinavian music I listen to when I'm working. The playlist is on both <a href='http://rd.io/x/QX_ZvTMkrAs/'>Rdio</a> and <a href='http://open.spotify.com/user/tomjeatt/playlist/4JGdNBBsONWIUFFS1rev22'>Spotify</a>."
 hero: scandinavia.jpg
 endnotes:
