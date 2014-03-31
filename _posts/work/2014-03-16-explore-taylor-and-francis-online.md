@@ -9,9 +9,9 @@ hero: explore-tfo-hero_v3.jpg
 
 When I started working for Taylor &amp; Francis (who publish academic journals) in 2008, 70% of our marketing was print. By 2012 70% of our marketing was online but most of it was done in a way which could be described as print, but on the web. The marketers would commission a designer to put together flyers, postcards or catalogues which would then be delivered as PDF files and uploaded to our website. 
 
-Each piece of work had to go from the marketer to the designer and then back to the marketer before being passed on to the web team and uploaded to the website. This made it difficult to put together anything other than simple campaigns and it wasn't unusual for larger campaigns to be made up of a series of linked PDFs which offered a very poor user experience. It was also hard to measure the success of each campaign since Google Analytics doesn't track traffic to and from PDF documents. The process was inefficient, expensive and time-consuming.
+Each piece of work had to go from the marketer to the designer and then back to the marketer before being passed on to the web team and uploaded to the website. This made it difficult to put together anything other than simple campaigns and it wasn't unusual for larger campaigns to be made up of a series of linked PDFs which offered a very poor user experience. It was also hard to measure the success of each campaign since Google Analytics doesn't track traffic to and from PDF documents very well. 
 
-My job was to come up with something better.
+It wasn't a very efficient way of doing things, and my job was to come up with something better.
 
 ## Cutting out the middle men
 
@@ -21,11 +21,11 @@ The challenge was coming up with a system which flexible enough to let them do t
 
 ## Under the hood
 
-During the research stage of the project I had noticed that most campaigns were made up of a small number of self-contained content types, such as article lists or conference announcements. Instead of giving users a way to create individual pages I used ExpressionEngine to create a content management system which keeps the content and the pages separate.
+During the research stage of the project I had noticed that most campaigns were made up of a small number of self-contained content types, such as article lists or conference announcements. Instead of giving users a way to create individual pages I used ExpressionEngine to create a content management system which kept the content and the pages separate.
 
-The marketers can create the content they need for each campaign, and then drag and drop it onto the campaign pages in any combination and in whatever order they want. Content can be reused and shared across multiple pages, which is something which is used extensively for social media profiles and shared promotions. Although the majority of pages are standalone campaigns, it is also very easy for marketers to create linked multi-page campaigns.
+The CMS allows the marketers to create the content they need for each campaign, and then drag and drop it onto the campaign pages in any combination and in whatever order they want. Content can be reused and shared across multiple pages, which is something which is used extensively for social media profiles and shared promotions. Although the majority of pages are standalone campaigns, it is also very easy to create multi-page campaigns.
 
-Because the layout of each content type is the same on every page, each campaign looks consistent, and applying universal updates is easily achieved. The site has already had one significant update to its layout, and this was done without affecting existing content. Because of the modular way in which the content management system is set up, new content types can be created as and when they are needed with only minor changes having to be made to the page templates.
+Because the layout of each content type is the same on every page, each campaign looks consistent. Applying universal updates is easily achieved and the site has already had one significant update to its layout. Because of the modular way in which the CMS has been set up, new content types can be created as and when they are needed with only minor changes having to be made to the page templates.
 
 ## Integration
 
