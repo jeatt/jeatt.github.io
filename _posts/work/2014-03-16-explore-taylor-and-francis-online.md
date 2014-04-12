@@ -5,6 +5,11 @@ categories:
 - work
 lede: "I designed and built a website which gave the Taylor &amp; Francis marketing team the freedom to create and manage their own campaigns without having to rely on external designers or the in-house web team."
 hero: explore-tfo-hero_v3.jpg
+responsibilities:
+- Research and planning
+- Design and development
+- Training
+- Maintenance and support
 ---
 
 When I started working for Taylor &amp; Francis (who publish academic journals) in 2008, 70% of our marketing was print. By 2012 70% of our marketing was online but most of it was done in a way which could be described as print, but on the web. The marketers would commission a designer to put together flyers, postcards or catalogues which would then be delivered as PDF files and uploaded to our website. 
@@ -24,6 +29,7 @@ The challenge was coming up with a system which flexible enough to let them do t
 During the research stage of the project I had noticed that most campaigns were made up of a small number of self-contained content types, such as article lists or conference announcements. Instead of giving users a way to create individual pages I used ExpressionEngine to create a content management system which kept the content and the pages separate.
 
 The CMS allows the marketers to create the content they need for each campaign, and then drag and drop it onto the campaign pages in any combination and in whatever order they want. Content can be reused and shared across multiple pages, which is something which is used extensively for social media profiles and shared promotions. Although the majority of pages are standalone campaigns, it is also very easy to create multi-page campaigns.
+![Article list and boxout](http://cdn.jea.tt/img/work/explore-tfo-article-list.jpg)
 
 Because the layout of each content type is the same on every page, each campaign looks consistent. Applying universal updates is easily achieved and the site has already had one significant update to its layout. Because of the modular way in which the CMS has been set up, new content types can be created as and when they are needed with only minor changes having to be made to the page templates.
 

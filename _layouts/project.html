@@ -25,13 +25,13 @@ layout: default
 		{{ page.content | markdownify }}
 	</div> <!-- /.content -->
 	<footer>
-		{% if page.project_notes %}
-		<h2>Project notes</h2>
-		<ol>
-			{% for item in page.project_notes %}
+		{% if page.responsibilities %}
+		<h2>Responsibilities</h2>
+		<ul>
+			{% for item in page.responsibilities %}
 			<li>{{ item }}</li>
 			{% endfor %}
-		</ol>
+		</ul>
 		{% endif %}
 	</footer>
 	<aside>
