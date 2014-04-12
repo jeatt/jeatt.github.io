@@ -6,7 +6,7 @@ standfirst: "This website is currently under development and I'm still in the pr
 
 ## Standards compliance
 
-This website has been designed to meet the highest possibility accessibility standards, and has been tested against the [WCAG 2.0 guidelines](http://www.w3.org/TR/WCAG20/).
+This website has been designed to meet the highest possibility accessibility standards, and is being tested against the [WCAG 2.0 guidelines](http://www.w3.org/TR/WCAG20/).
 
 ## Browser and device support
 
