@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cloudfront and S3 as a simple CDN"
+title: "Setting up a simple CDN with Cloudfront and S3"
 categories:
 - blog
 lede: "Cloudfront allows you to do some very complicated things and the documentation reflects that. I wanted to do something simple, which meant sifting through all of those words trying to find the ones which were relevant to me."
