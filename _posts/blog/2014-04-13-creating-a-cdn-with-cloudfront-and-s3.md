@@ -114,7 +114,7 @@ This is a big thing with CDNs and the final thing you need to worry about. Becau
 
 ## Logging
 
-Whether or not you set up logging depends on whether or not you need it. I set it up because I was interested, but I haven't really used it. It's very easy to do though.
+Whether or not you set up logging depends on whether or not you need it. I set it up because I was interested but I haven't really used it. It's very easy to do though.
 
 * Go to S3 and create a bucket to hold your logs. I called mine logs.jea.tt.
 * Go back to Cloudfront, select your distribution, and then click on the Distribution Settings button.
