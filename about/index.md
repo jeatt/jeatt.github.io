@@ -25,7 +25,7 @@ I have an MA in [Web Design and Content Planning](http://www.websitearchitecture
 
 My favourite design tools are a sharp pencil and [Whitelines writing paper]([http://whitelines.se/]) and when it's time to move to the screen I do most of my design work in the browser. I use Adobe Photoshop and Adobe Illustrator for working with photographs and graphics. 
 
-When it comes to code I use [Sublime Text](http://www.sublimetext.com/) to write HTML5, PHP, CSS (via [SASS](http://sass-lang.com/) and [Compass](http://compass-style.org/)) and JavaScript (via [jQuery](http://jquery.com/) and [CoffeeScript](http://coffeescript.org/)). I use Mac OS at home and Windows and Linux at work. I love using the terminal because it makes me feel like a 1980s hacker.
+When it comes to code I use [Sublime Text](http://www.sublimetext.com/) to write HTML5, PHP, CSS (via [SASS](http://sass-lang.com/) and [Compass](http://compass-style.org/)) and JavaScript (via [jQuery](http://jquery.com/)). I use Mac OS at home and Windows and Linux at work. I love using the terminal because it makes me feel like a 1980s hacker.
 
 My preferred content management systems are [ExpressionEngine](http://ellislab.com/expressionengine), [Perch](http://grabaperch.com/) and [Statamic](http://statamic.com/) but I always use the right tool for the job, even if it's a tool I've never used before.
 

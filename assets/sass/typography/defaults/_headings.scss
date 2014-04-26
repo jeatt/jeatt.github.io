@@ -17,19 +17,19 @@ h2{
 	@include adjust-font-size-to($base-font-size * 1.4);
 	@include adjust-leading-to(.8);
 	@include margin-leader(.75);
-	@include trailer(.25);
+	@include margin-trailer(.25);
 }
 
 h3{
 	@include adjust-font-size-to($base-font-size * 1.2);
 	@include adjust-leading-to(.71);
 	@include margin-leader(.75);
-	@include trailer(.25);
+	@include margin-trailer(.25);
 }
 
 h4{
 	@include adjust-font-size-to($base-font-size * 1.1);
 	@include adjust-leading-to(.71);
-	@include margin-leader(.75);
-	@include trailer(.25);
+	@include margin-leader(.5);
+	@include margin-trailer(.25);
 }
