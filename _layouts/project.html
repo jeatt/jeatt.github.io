@@ -26,9 +26,17 @@ layout: default
 	</div> <!-- /.content -->
 	<footer>
 		{% if page.responsibilities %}
-		<h2>Responsibilities</h2>
+		<h2>What I did</h2>
 		<ul>
 			{% for item in page.responsibilities %}
+			<li>{{ item }}</li>
+			{% endfor %}
+		</ul>
+		{% endif %}
+		{% if page.notes %}
+		<h2>Project notes</h2>
+		<ul>
+			{% for item in page.notes %}
 			<li>{{ item }}</li>
 			{% endfor %}
 		</ul>

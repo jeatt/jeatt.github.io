@@ -11,6 +11,8 @@ responsibilities:
 - Design and development
 - Training
 - Maintenance and support
+notes:
+- Built on ExpressionEngine
 ---
 
 Because Taylor &amp; Francis and the Regional Studies Association (RSA) have worked together for so long, this was the third version of their website that we had built and hosted. The previous two websites, both of which were built before I joined the company, had been static and managed by the Taylor &amp; Francis web team. The RSA wanted direct control over their website which meant that the new website had to be built on a suitable content management system, and the RSA's staff would need to be trained how to use it. 

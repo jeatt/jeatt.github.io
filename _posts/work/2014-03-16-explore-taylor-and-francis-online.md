@@ -10,6 +10,8 @@ responsibilities:
 - Design and development
 - Training
 - Maintenance and support
+notes:
+- Built on ExpressionEngine
 ---
 
 When I started working for Taylor &amp; Francis (who publish academic journals) in 2008, 70% of our marketing was print. By 2012 70% of our marketing was online but most of it was done in a way which could be described as print, but on the web. The marketers would commission a designer to put together flyers, postcards or catalogues which would then be delivered as PDF files and uploaded to our website. 
