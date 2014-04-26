@@ -18,6 +18,4 @@ Since May 2012 European law has required website owners to tell their users what
 
 ## What if I don't like cookies?
 
-Not everyone has a sweet tooth so you can  <a href="javascript:gaOptout()">use this link to disable tracking cookies</a> on this website. This will delete any Google Analytics cookies which have been set by this website and replace them with a single cookie with a very long life time. The only thing this cookie does is prevent the Google Analytics tracking cookies from being restored.
-
-The Fontdeck cookie can't be disabled but this website wouldn't work very well without it. If you're not comfortable with that then the only option is to stop using my website.
+Not everyone has a sweet tooth so if you would like to disable tracking cookies, Google offer a [handy little set of browser add ons](https://tools.google.com/dlpage/gaoptout). The Fontdeck cookie can't be disabled but this website wouldn't work very well without it. If you're not comfortable with that then the only option is to stop using my website.
