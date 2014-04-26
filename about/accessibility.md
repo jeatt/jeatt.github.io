@@ -1,16 +1,16 @@
 ---
 layout: page
 title: Accessibility
-standfirst: "This website is currently under development and I'm still in the process of carrying out accessibility testing. Once that's been finished, this page will be updated and more detail provided."
+standfirst: "Accessible web design is good web design, and it's important that the content on a website is available to everyone regardless of how they are accessing it."
 ---
 
 ## Standards compliance
 
-This website has been designed to meet the highest possibility accessibility standards, and is being tested against the [WCAG 2.0 guidelines](http://www.w3.org/TR/WCAG20/).
+This website has been designed to meet the highest possibility accessibility standards, and has been tested against the [WCAG 2.0 guidelines](http://www.w3.org/TR/WCAG20/).
 
 ## Browser and device support
 
-This website has been designed to provide an appropriate experience regardless of which device is being used to access it. Although optimised for modern browsers, the content of the website is also accessible to older browsers although certain design and layout elements may appear differently depending on the capabilities of older browsers. 
+This website has been designed to provide an appropriate experience regardless of which device is being used to access it. Although optimised for modern browsers, the content of the website is also accessible to older browsers although certain design and layout elements may appear differently depending on the capabilities of older browsers.
 
 ## Look and feel
 
