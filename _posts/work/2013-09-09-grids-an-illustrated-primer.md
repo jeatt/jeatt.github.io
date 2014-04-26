@@ -3,7 +3,7 @@ layout: project
 title: "Grids: An Illustrated Primer"
 categories:
 - work
-lede: "Grids: An Illustrated Primer is a website I put together as part of my university studies. It's less a website and more an illustrated essay."
+lede: "<a href='http://grids.anillustratedprimer.com'>Grids: An Illustrated Primer</a> is a website I put together as part of my university studies. It's less a website and more an illustrated essay."
 hero: grids-hero_v3.jpg
 responsibilities:
 - Research and planning

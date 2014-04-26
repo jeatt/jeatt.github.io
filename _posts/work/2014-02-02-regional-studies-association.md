@@ -3,7 +3,7 @@ layout: project
 title: Regional Studies Association
 categories:
 - work
-lede: "I designed and built a website for the Regional Studies Association, an academic society and one of Taylor &amp; Francis&rsquo; longest-serving publishing partners."
+lede: "I designed and built a website for the <a href='http://regionalstudies.org'>Regional Studies Association</a>, an academic society and one of Taylor &amp; Francis&rsquo; longest-serving publishing partners."
 hero: rsa-hero_v2.jpg
 responsibilities:
 - Research and planning

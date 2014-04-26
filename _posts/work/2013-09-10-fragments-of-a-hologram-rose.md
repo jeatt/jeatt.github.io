@@ -3,7 +3,7 @@ layout: project
 title: "Fragments of a Hologram Rose"
 categories:
 - work
-lede: "This was an experimental site I put together for a university project about typography."
+lede: "<a href='http://fragments.thomasjeatt.com'>Fragments of a Hologram Rose</a> was an experimental site I put together for a university project about typography."
 hero: fragments-hero_v2.jpg
 responsibilities:
 - Research and planning
