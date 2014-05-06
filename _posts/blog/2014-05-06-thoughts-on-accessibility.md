@@ -7,7 +7,7 @@ standfirst: "Earlier today I was reading about the <a href='http://jams.gamejolt
 hero: accessibility-shake.jpg
 endnotes:
 
-- "Top image is <a href='http://photos.jdhancock.com/photo/2012-06-25-064009-who-wants-to-play-video-games.html'>Who wants to play games?</a> by J.D. Hancock. Sourced from Flickr and <a href='http://creativecommons.org/licenses/by/3.0/deed.en_US'>licenced under creative commons</a>." 
+- "Top image is <a href='http://photos.jdhancock.com/photo/2012-06-25-064009-who-wants-to-play-video-games.html'>Who wants to play video games?</a> by J.D. Hancock. Sourced from Flickr and <a href='http://creativecommons.org/licenses/by/3.0/deed.en_US'>licenced under creative commons</a>." 
 - The Accessibility Jam is part of <a href='http://www.globalaccessibilityawarenessday.org/'>Global Accessibility Awareness Day</a> which is taking place on the 15th of May.
 - I originally found out about the Accessibility Jam through <a href='http://www.rockpapershotgun.com/2014/05/06/open-your-eyes-and-ears-etc-for-the-accessibility-jam/'>Rock Paper Shotgun</a>.
 ---
