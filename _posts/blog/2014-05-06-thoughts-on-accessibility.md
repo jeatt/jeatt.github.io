@@ -12,7 +12,7 @@ endnotes:
 - I originally found out about the Accessibility Jam through <a href='http://www.rockpapershotgun.com/2014/05/06/open-your-eyes-and-ears-etc-for-the-accessibility-jam/'>Rock Paper Shotgun</a>.
 ---
 
-Unlike web design, the game development industry is only just beginning to think of accessibility as a mainstream concern but in a lot of ways the accessibility challenges facing game designers are the same as those facing web designers. Games, like websites (and lots of games are played in the browser), rely on input devices&#8212;keyboards, mice, gamepads&#8212;which are optimised for people with good mobility, and output devices&#8212;monitors, televisions, tablets, phones&#8212;which are optimised for people with good eyesight.
+I think it's fair to say that compared to the web design industry the game development industry is only just beginning to think of accessibility as a mainstream concern. In a lot of ways though, the accessibility challenges facing game designers are the same as those facing web designers. Games, like websites (and lots of games are played in the browser), rely on input devices&#8212;keyboards, mice, gamepads&#8212;which are optimised for people with good mobility, and output devices&#8212;monitors, televisions, tablets, phones&#8212;which are optimised for people with good eyesight.
 
 What really struck me most about the way in which the organisers of the Accessibility Jam explained accessibility was the simple way in which they went about it, and how relevant their explanation is to web design.
 
