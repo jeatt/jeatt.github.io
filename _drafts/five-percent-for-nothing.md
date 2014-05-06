@@ -8,7 +8,7 @@ lede:
 hero: yes-1977.jpg
 endnotes:
 - "This is the second of three music themed posts about design. This one is about restraint. The <a href='/blog/dialling-it-back-a-notch/'>first was about taking things away</a>, and the third will be about constraint."
-- "I thought this story was about Bill Bruford and Yes, and that the song was <em>Five Percent for Nothing</em>. Hence the title. But, as I can't find a source for it and the song was written by, and features, Bill Bruford, I'm wrong on all counts. I kept the title though, because it fits."
+- "I thought this story was about Bill Bruford and Yes, and that the song was <em>Five Percent for Nothing</em>. Hence the title. But, as I can't find a source for it since Bill Bruford both wrote and played on the song, I'm wrong on all counts. I kept the title though, because it fits."
 - "Top image is Yes in 1977, long after Bruford had defected to King Crimson. Because if you're going to be wrong, you might as well be wrong about everything. By <a href='http://commons.wikimedia.org/wiki/File%3AYes_concert.jpg'>Rick Dikeman via Wikimedia Commons</a>."
 ---
 
