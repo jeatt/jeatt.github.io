@@ -1,0 +1,39 @@
+.carousel .carousel-pagination li {
+    padding: 5px;
+}
+.carousel .carousel-pagination li a {
+    border-radius: 25px;
+}
+.carousel .carousel-nav-paginated .carousel-active-page a{
+    background: #ED1C2E;
+    opacity: 1;
+}
+.carousel-nav-paginated ol {
+    margin: 1em;
+    float: right;
+}
+.carousel-nav {
+  top: 0;
+  height: 42px;
+}
+.travelex-slides {
+  background: #004FA3;
+  padding: 20px;
+  color: #FFF;
+  font-family: arial;
+}
+.travelex-slides a {
+  color: #FFF;
+  text-decoration: none;
+}
+.red-button {
+  background: #ED1C2E;
+  padding: 10px;
+  display: block;
+  width: 90%;
+  border-radius: 2px;
+}
+
+.carousel-slide .carousel-item {
+  width: 90%;
+}

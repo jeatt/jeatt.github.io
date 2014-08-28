@@ -1,0 +1,49 @@
+{
+	"name": "responsive-carousel",
+	"title": "Responsive Carousel",
+	"description": "A jQuery-based script for responsive carousels that work with mouse, touch, and keyboard",
+	"version": "0.2.0",
+	"homepage": "https://github.com/filamentgroup/responsive-carousel",
+	"author": {
+		"name": "Filament Group, Inc.",
+		"url": "http://filamentgroup.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/filamentgroup/responsive-carousel"
+	},
+	"bugs": {
+		"url": "https://github.com/filamentgroup/responsive-carousel/issues"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "https://github.com/filamentgroup/responsive-carousel/blob/master/LICENSE-MIT"
+		},
+		{
+			"type": "GPL",
+			"url": "https://github.com/filamentgroup/responsive-carousel/blob/master/LICENSE-GPL"
+		}
+	],
+	"main": "dist/responsive-carousel.js",
+	"engines":{
+		"node": "~0.6"
+	},
+	"scripts":{
+		"test" : "grunt travis --verbose"
+	},
+	"dependencies": {
+		"jquery": "~1.7.2"
+	},
+	"devDependencies":{
+		"grunt": "0.4.1",
+		"grunt-cli": "0.1.9",
+		"grunt-contrib-qunit": "0.2.2",
+		"grunt-contrib-jshint": "0.6.4",
+		"grunt-contrib-concat": "0.3.0",
+		"grunt-contrib-uglify": "0.2.2",
+		"grunt-contrib-copy": "0.4.1",
+		"grunt-contrib-watch": "0.5.3"
+	},
+	"keywords": []
+}
